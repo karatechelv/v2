@@ -7,6 +7,7 @@ import "./Header.css";
 
 import Clock from "./Clock";
 import DateBox from "./DateBox";
+import UserSessionTimer from "./UserSessionTimer";
 
 function Header(){
 
@@ -43,6 +44,8 @@ function Header(){
                 <DateBox />
 
                 <Clock />
+
+                <UserSessionTimer />
 
             </div>
 
