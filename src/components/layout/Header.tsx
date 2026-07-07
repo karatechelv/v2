@@ -6,10 +6,11 @@
 import "./Header.css";
 
 import Clock from "./Clock";
+import DateBox from "./DateBox";
 
-function Header() {
+function Header(){
 
-    return (
+    return(
 
         <header className="header">
 
@@ -21,7 +22,7 @@ function Header() {
 
                     type="text"
 
-                    placeholder="جستجو در کل سایت..."
+                    placeholder="جستجو در کل سامانه..."
 
                 />
 
@@ -38,6 +39,8 @@ function Header() {
             </div>
 
             <div className="header__right">
+
+                <DateBox />
 
                 <Clock />
 
