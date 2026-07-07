@@ -51,3 +51,9 @@ function AppRoutes(){
 }
 
 export default AppRoutes;
+import PanelBuilder from "../pages/PanelBuilder";
+
+<Route
+    path="/panel-builder"
+    element={<PanelBuilder/>}
+/>
