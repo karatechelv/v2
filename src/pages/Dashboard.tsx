@@ -2,79 +2,114 @@
  * Karatech ELV
  * File : src/pages/Dashboard.tsx
  * Description :
- * Engineering Operating System Dashboard
+ * Main Dashboard
  *****************************************************************/
 
-function Dashboard() {
+import "./Dashboard.css";
 
-    return (
+import Header from "../components/layout/Header";
+import Sidebar from "../components/layout/Sidebar";
 
-        <main
-            style={{
-                width: "100%",
-                minHeight: "100vh",
-                background: "#0f172a",
-                color: "#ffffff",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontFamily: "Tahoma"
-            }}
-        >
+function Dashboard(){
 
-            <div
-                style={{
-                    width: "90%",
-                    maxWidth: "1400px",
-                    background: "#1e293b",
-                    borderRadius: "16px",
-                    padding: "40px",
-                    boxShadow: "0 0 30px rgba(0,0,0,.35)"
-                }}
-            >
+    return(
 
-                <h1
-                    style={{
-                        marginBottom: "15px"
-                    }}
-                >
-                    KARATECH ELV
-                </h1>
+        <div className="dashboard">
 
-                <h2
-                    style={{
-                        marginTop: 0,
-                        color: "#94a3b8"
-                    }}
-                >
-                    Engineering Operating System
-                </h2>
+            <Sidebar />
 
-                <hr />
+            <div className="dashboard__main">
 
-                <h3>Dashboard</h3>
+                <Header />
 
-                <ul>
+                <div className="dashboard__content">
 
-                    <li>📁 Projects</li>
+                    <h1 className="dashboard__title">
 
-                    <li>⚡ Engineering Lab</li>
+                        Engineering Operating System
 
-                    <li>🧮 Calculators</li>
+                    </h1>
 
-                    <li>📚 Standards</li>
+                    <p className="dashboard__subtitle">
 
-                    <li>📊 Tables</li>
+                        Welcome to Karatech ELV
 
-                    <li>📄 Reports</li>
+                    </p>
 
-                    <li>🤖 AI Engineer</li>
+                    <div className="dashboard__cards">
 
-                </ul>
+                        <div className="dashboard__card">
+
+                            <h3>⚡ Engineering Lab</h3>
+
+                            <p>
+
+                                Design electrical systems,
+                                create panels,
+                                generate BOM
+                                and review projects.
+
+                            </p>
+
+                        </div>
+
+                        <div className="dashboard__card">
+
+                            <h3>🧮 Calculators</h3>
+
+                            <p>
+
+                                Voltage Drop,
+                                Cable Sizing,
+                                Busbar,
+                                Earthing,
+                                Generator,
+                                UPS,
+                                Lighting...
+
+                            </p>
+
+                        </div>
+
+                        <div className="dashboard__card">
+
+                            <h3>📚 Standards</h3>
+
+                            <p>
+
+                                IEC,
+                                IEEE,
+                                IPS,
+                                ISIRI,
+                                مبحث ۱۳,
+                                نشریه ۱۱۰
+
+                            </p>
+
+                        </div>
+
+                        <div className="dashboard__card">
+
+                            <h3>🤖 AI Engineer</h3>
+
+                            <p>
+
+                                Smart engineering assistant,
+                                project analysis,
+                                BOM generation
+                                and design review.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </main>
+        </div>
 
     );
 
