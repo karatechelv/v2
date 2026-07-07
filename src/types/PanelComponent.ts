@@ -1,6 +1,5 @@
 /*****************************************************************
  * Karatech ELV
- * File : PanelComponent.ts
  *****************************************************************/
 
 export interface PanelComponent{
@@ -12,5 +11,9 @@ export interface PanelComponent{
     x:number;
 
     y:number;
+
+    rotation:number;
+
+    selected:boolean;
 
 }
