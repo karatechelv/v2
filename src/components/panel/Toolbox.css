@@ -2,32 +2,66 @@
  * Karatech ELV
  *****************************************************************/
 
-.toolbox{
+import "./Toolbox.css";
 
-    display:flex;
+import { usePanelStore } from "../../store/panelStore";
 
-    flex-direction:column;
+const items=[
 
-    gap:10px;
+"MCCB",
+
+"MCB",
+
+"ACB",
+
+"PLC",
+
+"RELAY",
+
+"CONTACTOR"
+
+];
+
+function Toolbox(){
+
+    const addComponent=usePanelStore(
+
+        state=>state.addComponent
+
+    );
+
+    return(
+
+        <div className="toolbox">
+
+            <h2>Components</h2>
+
+            {
+
+                items.map(item=>(
+
+                    <button
+
+                        key={item}
+
+                        className="toolboxButton"
+
+                        onClick={()=>addComponent(item)}
+
+                    >
+
+                        {item}
+
+                    </button>
+
+                ))
+
+            }
+
+        </div>
+
+    );
 
 }
 
-.toolboxButton{
-
-    width:100%;
-
-    height:45px;
-
-    border-radius:8px;
-
-    background:#1e293b;
-
-    color:white;
-
-}
-
-.toolboxButton:hover{
-
-    background:#2563eb;
-
-}
+export default Toolbox;
