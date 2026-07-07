@@ -2,6 +2,7 @@
  * Karatech ELV
  * Engineering Lab
  *****************************************************************/
+import { Link } from "react-router-dom";
 
 import "./EngineeringLab.css";
 
@@ -19,7 +20,15 @@ function EngineeringLab(){
 
             <div className="engineeringGrid">
 
-                <button>⚡ Panel Builder</button>
+                <Link to="/panel-builder">
+
+    <button>
+
+        ⚡ Panel Builder
+
+    </button>
+
+</Link>
 
                 <button>🧮 Calculator Engine</button>
 
