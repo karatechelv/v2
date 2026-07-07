@@ -37,15 +37,19 @@ export const usePanelStore=create<PanelState>((set)=>({
 
             {
 
-                id:Date.now(),
+    id:Date.now(),
 
-                name,
+    name,
 
-                x:120,
+    x:120,
 
-                y:120
+    y:120,
 
-            }
+    rotation:0,
+
+    selected:false
+
+}
 
         ]
 
