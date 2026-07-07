@@ -1,11 +1,11 @@
 /*****************************************************************
  * Karatech ELV
  * File : src/components/layout/Header.tsx
- * Description :
- * Main Header
  *****************************************************************/
 
 import "./Header.css";
+
+import Clock from "./Clock";
 
 function Header() {
 
@@ -16,9 +16,13 @@ function Header() {
             <div className="header__left">
 
                 <input
+
                     className="header__search"
+
                     type="text"
-                    placeholder="جستجو در سایت..."
+
+                    placeholder="جستجو در کل سایت..."
+
                 />
 
             </div>
@@ -35,11 +39,7 @@ function Header() {
 
             <div className="header__right">
 
-                <span className="header__clock">
-
-                    00:00:00
-
-                </span>
+                <Clock />
 
             </div>
 
