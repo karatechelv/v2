@@ -1,0 +1,90 @@
+/*****************************************************************
+ * Karatech ELV
+ * Panel Builder Style
+ *****************************************************************/
+
+.panelBuilder{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr 300px;
+
+    height:100vh;
+
+    background:#0f172a;
+
+}
+
+.toolbox{
+
+    background:#111827;
+
+    border-left:1px solid #334155;
+
+    padding:20px;
+
+    overflow:auto;
+
+}
+
+.toolbox button{
+
+    width:100%;
+
+    height:45px;
+
+    margin-bottom:10px;
+
+    background:#1e293b;
+
+    color:white;
+
+    border-radius:8px;
+
+}
+
+.toolbox button:hover{
+
+    background:#2563eb;
+
+}
+
+.workspace{
+
+    padding:20px;
+
+}
+
+.drawingArea{
+
+    margin-top:20px;
+
+    width:100%;
+
+    height:85vh;
+
+    border:2px dashed #475569;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#94a3b8;
+
+    background:#111827;
+
+}
+
+.properties{
+
+    background:#111827;
+
+    border-right:1px solid #334155;
+
+    padding:20px;
+
+}
