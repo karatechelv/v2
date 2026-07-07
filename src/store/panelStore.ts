@@ -29,31 +29,31 @@ export const usePanelStore=create<PanelState>((set)=>({
 
     components:[],
 
-    addComponent:(name)=>set((state)=>({
+  addComponent:(name)=>set((state)=>({
 
-        components:[
+    components:[
 
-            ...state.components,
+        ...state.components,
 
-            {
+        {
 
-    id:Date.now(),
+            id:Date.now(),
 
-    name,
+            name,
 
-    x:120,
+            x:120,
 
-    y:120,
+            y:120,
 
-    rotation:0,
+            rotation:0,
 
-    selected:false
+            selected:false
 
-}
+        }
 
-        ]
+    ]
 
-    })),
+})),
 
     moveComponent:(id,x,y)=>set((state)=>({
 
