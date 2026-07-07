@@ -1,21 +1,52 @@
 /*****************************************************************
  * Karatech ELV
- * File : src/components/panel/PanelCanvas.tsx
- * Description :
- * Panel Drawing Area
  *****************************************************************/
 
 import "./PanelCanvas.css";
 
-function PanelCanvas() {
+import { usePanelStore } from "../../store/panelStore";
 
-    return (
+function PanelCanvas(){
+
+    const components=usePanelStore(
+
+        state=>state.components
+
+    );
+
+    return(
 
         <div className="panelCanvas">
 
             <div className="panelGrid">
 
-                Workspace
+                {
+
+                    components.map(component=>(
+
+                        <div
+
+                            key={component.id}
+
+                            className="panelItem"
+
+                            style={{
+
+                                left:component.x,
+
+                                top:component.y
+
+                            }}
+
+                        >
+
+                            {component.name}
+
+                        </div>
+
+                    ))
+
+                }
 
             </div>
 
