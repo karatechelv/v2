@@ -1,90 +1,44 @@
 /*****************************************************************
  * Karatech ELV
- * Panel Builder Style
+ * Panel Builder
  *****************************************************************/
 
-.panelBuilder{
+import "./PanelBuilder.css";
 
-    display:grid;
+import Toolbox from "../components/panel/Toolbox";
 
-    grid-template-columns:260px 1fr 300px;
+import PanelCanvas from "../components/panel/PanelCanvas";
 
-    height:100vh;
+import Properties from "../components/panel/Properties";
 
-    background:#0f172a;
+function PanelBuilder(){
 
-}
+    return(
 
-.toolbox{
+        <div className="panelBuilder">
 
-    background:#111827;
+            <aside className="toolbox">
 
-    border-left:1px solid #334155;
+                <Toolbox/>
 
-    padding:20px;
+            </aside>
 
-    overflow:auto;
+            <main className="workspace">
 
-}
+                <PanelCanvas/>
 
-.toolbox button{
+            </main>
 
-    width:100%;
+            <aside className="properties">
 
-    height:45px;
+                <Properties/>
 
-    margin-bottom:10px;
+            </aside>
 
-    background:#1e293b;
+        </div>
 
-    color:white;
-
-    border-radius:8px;
+    )
 
 }
 
-.toolbox button:hover{
-
-    background:#2563eb;
-
-}
-
-.workspace{
-
-    padding:20px;
-
-}
-
-.drawingArea{
-
-    margin-top:20px;
-
-    width:100%;
-
-    height:85vh;
-
-    border:2px dashed #475569;
-
-    border-radius:12px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    color:#94a3b8;
-
-    background:#111827;
-
-}
-
-.properties{
-
-    background:#111827;
-
-    border-right:1px solid #334155;
-
-    padding:20px;
-
-}
+export default PanelBuilder;
