@@ -1,29 +1,56 @@
-let seconds = 0;
+/*========================================
+ KARATECH ELV
+ Journey Timer
+========================================*/
 
-function journeyTimer(){
+const journeyElement =
+document.getElementById("journey");
 
-seconds++;
+let journeySeconds = 0;
 
-let h=Math.floor(seconds/3600);
+function updateJourney(){
 
-let m=Math.floor((seconds%3600)/60);
+    journeySeconds++;
 
-let s=seconds%60;
+    let h =
+    Math.floor(journeySeconds/3600);
 
-h=String(h).padStart(2,"0");
+    let m =
+    Math.floor((journeySeconds%3600)/60);
 
-m=String(m).padStart(2,"0");
+    let s =
+    journeySeconds%60;
 
-s=String(s).padStart(2,"0");
+    h=String(h).padStart(2,"0");
 
-const journey=document.getElementById("journey");
+    m=String(m).padStart(2,"0");
 
-if(journey){
+    s=String(s).padStart(2,"0");
 
-journey.innerHTML="Journey : "+h+":"+m+":"+s;
+    journeyElement.innerHTML=
+
+    "Journey : "
+
+    +
+
+    h
+
+    +
+
+    ":"
+
+    +
+
+    m
+
+    +
+
+    ":"
+
+    +
+
+    s;
 
 }
 
-}
-
-setInterval(journeyTimer,1000);
+setInterval(updateJourney,1000);
