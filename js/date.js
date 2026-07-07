@@ -1,21 +1,37 @@
+/*========================================
+ KARATECH ELV
+ Date System
+========================================*/
+
+const dateElement = document.getElementById("date");
+
 function updateDate(){
 
-const now=new Date();
+    const today = new Date();
 
-const options={
+    const language =
+        document.getElementById("language");
 
-year:"numeric",
+    if(language){
 
-month:"long",
+        if(language.value==="fa"){
 
-day:"numeric"
+            dateElement.innerHTML=
+                today.toLocaleDateString("fa-IR");
 
-};
+        }
 
-document.getElementById("date").innerHTML=
+        else{
 
-now.toLocaleDateString("en-US",options);
+            dateElement.innerHTML=
+                today.toLocaleDateString("en-US");
+
+        }
+
+    }
 
 }
 
 updateDate();
+
+setInterval(updateDate,1000);
