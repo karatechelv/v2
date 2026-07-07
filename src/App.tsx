@@ -1,17 +1,19 @@
 /*****************************************************************
  * Karatech ELV
  * File : src/App.tsx
- * Description :
- * Main Application Component
  *****************************************************************/
 
 import Dashboard from "./pages/Dashboard";
 
-function App() {
+import LogoWatermark from "./components/layout/LogoWatermark";
 
-    return (
+function App(){
+
+    return(
 
         <>
+
+            <LogoWatermark />
 
             <Dashboard />
 
