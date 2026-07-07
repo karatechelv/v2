@@ -1,0 +1,43 @@
+/*****************************************************************
+ * Karatech ELV
+ *****************************************************************/
+
+.panelCanvas{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.panelGrid{
+
+    width:100%;
+
+    height:100%;
+
+    border:2px dashed #475569;
+
+    border-radius:12px;
+
+    background-color:#111827;
+
+    background-image:
+
+    linear-gradient(#1f2937 1px,transparent 1px),
+
+    linear-gradient(90deg,#1f2937 1px,transparent 1px);
+
+    background-size:25px 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#64748b;
+
+    font-size:22px;
+
+}
