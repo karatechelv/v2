@@ -4,15 +4,19 @@
 
 import "./PanelCanvas.css";
 
+import PanelItem from "./PanelItem";
+
 import { usePanelStore } from "../../store/panelStore";
 
 function PanelCanvas(){
 
-    const components=usePanelStore(
+    const components=
 
-        state=>state.components
+        usePanelStore(
 
-    );
+            state=>state.components
+
+        );
 
     return(
 
@@ -24,25 +28,13 @@ function PanelCanvas(){
 
                     components.map(component=>(
 
-                        <div
+                        <PanelItem
 
                             key={component.id}
 
-                            className="panelItem"
+                            component={component}
 
-                            style={{
-
-                                left:component.x,
-
-                                top:component.y
-
-                            }}
-
-                        >
-
-                            {component.name}
-
-                        </div>
+                        />
 
                     ))
 
