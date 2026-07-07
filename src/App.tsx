@@ -3,7 +3,7 @@
  * File : src/App.tsx
  *****************************************************************/
 
-import Dashboard from "./pages/Dashboard";
+import AppRoutes from "./router/routes";
 
 import LogoWatermark from "./components/layout/LogoWatermark";
 
@@ -15,7 +15,7 @@ function App(){
 
             <LogoWatermark />
 
-            <Dashboard />
+            <AppRoutes />
 
         </>
 
