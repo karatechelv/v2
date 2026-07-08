@@ -1,4 +1,11 @@
-name: Deploy Vite to GitHub Pages
+##########################################################################################
+# Karatech ELV
+# File : .github/workflows/deploy.yml
+# Description :
+# GitHub Pages Deployment
+##########################################################################################
+
+name: Karatech ELV Deploy
 
 on:
 
@@ -18,13 +25,15 @@ permissions:
 
 concurrency:
 
-  group: pages
+  group: github-pages
 
   cancel-in-progress: true
 
 jobs:
 
   build:
+
+    name: Build
 
     runs-on: ubuntu-latest
 
@@ -34,7 +43,7 @@ jobs:
 
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
 
         uses: actions/setup-node@v4
 
@@ -52,7 +61,7 @@ jobs:
 
         run: npm run build
 
-      - name: Upload Artifact
+      - name: Upload Dist Folder
 
         uses: actions/upload-pages-artifact@v3
 
@@ -61,6 +70,8 @@ jobs:
           path: ./dist
 
   deploy:
+
+    name: Deploy
 
     needs: build
 
@@ -74,7 +85,7 @@ jobs:
 
     steps:
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy To GitHub Pages
 
         id: deployment
 
