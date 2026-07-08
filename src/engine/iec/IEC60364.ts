@@ -30,7 +30,7 @@ export interface IECResult{
 }
 
 export function calculateIEC(
-
+// @ts-ignore
     input:IECInput
 
 ):IECResult{
