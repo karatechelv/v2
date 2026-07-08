@@ -1,14 +1,17 @@
-/*****************************************************************
+/****************************************************************************************
  * Karatech ELV
- *****************************************************************/
+ * File : src/router/routes.tsx
+ * Description :
+ * Application Routes
+ ****************************************************************************************/
 
 import {
 
-BrowserRouter,
+    BrowserRouter,
 
-Routes,
+    Routes,
 
-Route
+    Route
 
 }
 
@@ -17,6 +20,8 @@ from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 
 import EngineeringLab from "../pages/EngineeringLab";
+
+import PanelBuilder from "../pages/PanelBuilder";
 
 function AppRoutes(){
 
@@ -30,7 +35,7 @@ function AppRoutes(){
 
                     path="/"
 
-                    element={<Dashboard/>}
+                    element={<Dashboard />}
 
                 />
 
@@ -38,7 +43,15 @@ function AppRoutes(){
 
                     path="/engineering-lab"
 
-                    element={<EngineeringLab/>}
+                    element={<EngineeringLab />}
+
+                />
+
+                <Route
+
+                    path="/panel-builder"
+
+                    element={<PanelBuilder />}
 
                 />
 
@@ -51,9 +64,3 @@ function AppRoutes(){
 }
 
 export default AppRoutes;
-import PanelBuilder from "../pages/PanelBuilder";
-
-<Route
-    path="/panel-builder"
-    element={<PanelBuilder/>}
-/>
