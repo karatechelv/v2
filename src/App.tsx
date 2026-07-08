@@ -3,26 +3,16 @@
  * File : src/App.tsx
  ****************************************************************************************/
 
-function App(){
+import AppRoutes from "./router/routes";
+import LogoWatermark from "./components/layout/LogoWatermark";
 
-    return(
-
-        <div
-            style={{
-                color:"white",
-                background:"#111",
-                minHeight:"100vh",
-                padding:"40px",
-                fontSize:"40px"
-            }}
-        >
-
-            KARATECH OK
-
-        </div>
-
-    );
-
+function App() {
+  return (
+    <>
+      <LogoWatermark />
+      <AppRoutes />
+    </>
+  );
 }
 
 export default App;
