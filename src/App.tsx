@@ -1,18 +1,22 @@
 /****************************************************************************************
  * Karatech ELV
  * File : src/App.tsx
+ * Description :
+ * Application Entry Point
  ****************************************************************************************/
 
-import AppRoutes from "./router/routes";
-import LogoWatermark from "./components/layout/LogoWatermark";
+function App(){
 
-function App() {
-  return (
-    <>
-      <LogoWatermark />
-      <AppRoutes />
-    </>
-  );
+    return(
+
+        <h1>
+
+            KARATECH OK
+
+        </h1>
+
+    );
+
 }
 
 export default App;
