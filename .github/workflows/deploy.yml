@@ -57,7 +57,7 @@ jobs:
 
         run: npm run build
 
-      - name: Upload Dist
+      - name: Upload Dist Folder
 
         uses: actions/upload-pages-artifact@v3
 
@@ -79,7 +79,7 @@ jobs:
 
     steps:
 
-      - name: Deploy
+      - name: Deploy To GitHub Pages
 
         id: deployment
 
