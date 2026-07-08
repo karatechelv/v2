@@ -8,25 +8,17 @@
 name: Karatech ELV Deploy
 
 on:
-
   push:
-
     branches:
-
       - main
 
 permissions:
-
   contents: read
-
   pages: write
-
   id-token: write
 
 concurrency:
-
   group: github-pages
-
   cancel-in-progress: true
 
 jobs:
@@ -38,31 +30,22 @@ jobs:
     steps:
 
       - name: Checkout Repository
-
         uses: actions/checkout@v4
 
       - name: Setup Node
-
         uses: actions/setup-node@v4
-
         with:
-
           node-version: 20
 
       - name: Install Dependencies
-
         run: npm install
 
       - name: Build Project
-
         run: npm run build
 
       - name: Upload Dist Folder
-
         uses: actions/upload-pages-artifact@v3
-
         with:
-
           path: ./dist
 
   deploy:
@@ -72,15 +55,11 @@ jobs:
     runs-on: ubuntu-latest
 
     environment:
-
       name: github-pages
-
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
 
       - name: Deploy To GitHub Pages
-
         id: deployment
-
         uses: actions/deploy-pages@v4
