@@ -1,23 +1,25 @@
-/*****************************************************************
+/****************************************************************************************
  * Karatech ELV
  * File : src/App.tsx
- *****************************************************************/
-
-import AppRoutes from "./router/routes";
-
-import LogoWatermark from "./components/layout/LogoWatermark";
+ ****************************************************************************************/
 
 function App(){
 
     return(
 
-        <>
+        <div
+            style={{
+                color:"white",
+                background:"#111",
+                minHeight:"100vh",
+                padding:"40px",
+                fontSize:"40px"
+            }}
+        >
 
-            <LogoWatermark />
+            KARATECH OK
 
-            <AppRoutes />
-
-        </>
+        </div>
 
     );
 
