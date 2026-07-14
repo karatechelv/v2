@@ -1,0 +1,25 @@
+/*****************************************************************
+ * Karatech ELV
+ *****************************************************************/
+
+.zoomBar{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.zoomBar button{
+
+    width:45px;
+
+    height:40px;
+
+    background:#1e293b;
+
+    color:white;
+
+    border-radius:6px;
+
+}

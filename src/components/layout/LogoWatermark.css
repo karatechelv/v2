@@ -1,0 +1,28 @@
+/*****************************************************************
+ * Karatech ELV
+ * File : src/components/layout/LogoWatermark.css
+ *****************************************************************/
+
+.logoWatermark{
+
+    position:fixed;
+
+    top:18px;
+
+    right:18px;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+}
+
+.logoWatermark img{
+
+    width:85px;
+
+    opacity:.10;
+
+    user-select:none;
+
+}

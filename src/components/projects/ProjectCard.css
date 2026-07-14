@@ -1,0 +1,39 @@
+/*****************************************************************
+ * Karatech ELV
+ *****************************************************************/
+
+.projectCard{
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    transition:.3s;
+
+}
+
+.projectCard:hover{
+
+    border-color:#38bdf8;
+
+    transform:translateY(-4px);
+
+}
+
+.projectCard h3{
+
+    color:#38bdf8;
+
+    margin-bottom:10px;
+
+}
+
+.projectCard p{
+
+    margin:6px 0;
+
+}

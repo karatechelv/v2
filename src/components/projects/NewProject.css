@@ -1,0 +1,58 @@
+/*****************************************************************
+ * Karatech ELV
+ * File : src/components/projects/NewProject.css
+ *****************************************************************/
+
+.newProject{
+
+    width:100%;
+
+    background:#1e293b;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.newProject input{
+
+    height:45px;
+
+    border-radius:8px;
+
+    background:#0f172a;
+
+    color:#fff;
+
+    padding:0 15px;
+
+    border:1px solid #334155;
+
+}
+
+.newProject button{
+
+    height:45px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.newProject button:hover{
+
+    background:#1d4ed8;
+
+}
