@@ -6,9 +6,11 @@ function Dashboard() {
     <>
       <Header />
       <Sidebar />
-      <div style={{ color: "white", padding: "40px" }}>
-        Header + Sidebar OK
-      </div>
+
+      <main className="dashboard-main">
+        Dashboard Content
+      </main>
+
     </>
   );
 }
