@@ -27,7 +27,7 @@ function AppRoutes(){
 
     return(
 
-        <BrowserRouter>
+        <BrowserRouter basename="/v2">
 
             <Routes>
 
