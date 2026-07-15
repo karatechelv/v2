@@ -17,6 +17,8 @@ import {
 
 from "react-router-dom";
 
+import Login from "../pages/Login";
+
 import Dashboard from "../pages/Dashboard";
 
 import EngineeringLab from "../pages/EngineeringLab";
