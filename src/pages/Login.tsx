@@ -8,11 +8,11 @@ function Login() {
 
         <div className="login__card">
 
-        <img
-  src="/logo.png"
-  alt="KARATECH ELV"
-  className="login__logo"
-/>
+          <img
+            src="/logo.png"
+            alt="KARATECH ELV"
+            className="login__logo"
+          />
 
           <h1>KARATECH ELV</h1>
 
@@ -43,7 +43,7 @@ function Login() {
             </p>
 
             <strong>
-              Mohsen Karami
+              Mohsen Keramati Layegh
             </strong>
 
             <span>
