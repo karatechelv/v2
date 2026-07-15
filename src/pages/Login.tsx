@@ -9,7 +9,7 @@ function Login() {
         <div className="login__card">
 
         <img
-  src={`${import.meta.env.BASE_URL}logo.png`}
+  src="/logo.png"
   alt="KARATECH ELV"
   className="login__logo"
 />
