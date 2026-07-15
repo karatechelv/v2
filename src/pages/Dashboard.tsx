@@ -1,11 +1,13 @@
 import Header from "../components/layout/Header";
+import Sidebar from "../components/layout/Sidebar";
 
 function Dashboard() {
   return (
     <>
       <Header />
+      <Sidebar />
       <div style={{ color: "white", padding: "40px" }}>
-        Header OK
+        Header + Sidebar OK
       </div>
     </>
   );
