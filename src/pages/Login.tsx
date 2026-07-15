@@ -35,13 +35,19 @@ function Login() {
           <button>SIGN IN</button>
 
           <div className="login__footer">
-            <p>Designed, Developed & Engineered by</p>
+
+            <p>
+              Designed, Developed & Engineered by
+            </p>
 
             <strong>
               Mohsen Keramati Layegh
             </strong>
 
-            <span>Version 1.0.0</span>
+            <span>
+              Version 1.0.0
+            </span>
+
           </div>
 
         </div>
