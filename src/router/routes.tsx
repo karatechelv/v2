@@ -34,13 +34,14 @@ function AppRoutes(){
             <Routes>
 
                 <Route
-
-                    path="/"
-
-                    element={<Dashboard />}
-
-                />
-
+                      path="/"
+                      element={<Login />}
+              />
+                    <Route
+                    path="/dashboard"
+                   element={<Dashboard />}
+              />
+               
                 <Route
 
                     path="/engineering-lab"
