@@ -8,11 +8,11 @@ function Login() {
 
         <div className="login__card">
 
-          <img
-            src="/logo.png"
-            alt="Karatech ELV"
-            className="login__logo"
-          />
+        <img
+  src={`${import.meta.env.BASE_URL}logo.png`}
+  alt="KARATECH ELV"
+  className="login__logo"
+/>
 
           <h1>KARATECH ELV</h1>
 
