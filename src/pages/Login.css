@@ -1,139 +1,267 @@
+/******************************************************************************
+ * Project      : Karatech ELV
+ * File         : src/pages/Login.css
+ * Description  : Login Page Styles
+******************************************************************************/
+
+/* ================= RESET ================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Tahoma,sans-serif;
+    font-family:Segoe UI,Tahoma,sans-serif;
 }
 
+/* ================= PAGE ================= */
+
 .login{
-    width:100vw;
-    height:100vh;
-    background:url("/background.jpg") center center/cover;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
+    width:100%;
+    min-height:100vh;
+    background:url("/background.jpg") center center/cover no-repeat;
 }
 
 .login__overlay{
-    width:100%;
-    height:100%;
-    background:rgba(5,10,25,.72);
+    min-height:100vh;
+    background:rgba(6,12,25,.78);
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:40px;
 }
+
+/* ================= CARD ================= */
 
 .login__card{
-    width:430px;
-    padding:45px;
-    border-radius:22px;
-    background:rgba(20,30,45,.75);
-    backdrop-filter:blur(20px);
-    border:1px solid rgba(255,255,255,.12);
+
+    width:480px;
+
+    background:rgba(18,26,42,.82);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    backdrop-filter:blur(18px);
+
     text-align:center;
-    box-shadow:0 0 50px rgba(0,140,255,.20);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
 }
+
+/* ================= LOGO ================= */
 
 .login__logo{
-    width:220px;
-    height:auto;
+
+    width:170px;
+
     display:block;
-    margin:0 auto 25px;
+
+    margin:0 auto 15px;
+
 }
 
-.login h1{
+/* ================= LANGUAGE ================= */
+
+.login__language{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:8px;
+
+    margin-bottom:15px;
+
+}
+
+.login__language button{
+
+    width:45px;
+
+    height:30px;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    background:#23334d;
+
     color:white;
-    font-size:34px;
-    letter-spacing:2px;
+
+}
+
+.login__language .active{
+
+    background:#0ea5e9;
+
+}
+
+/* ================= TITLES ================= */
+
+.login h1{
+
+    color:white;
+
+    font-size:26px;
+
     margin-bottom:8px;
+
 }
 
 .login h2{
+
     color:#38bdf8;
-    font-size:18px;
-    margin-bottom:12px;
+
+    font-size:16px;
+
     font-weight:400;
+
+    margin-bottom:15px;
+
 }
 
 .login__description{
+
     color:#94a3b8;
-    margin-bottom:35px;
+
+    font-size:14px;
+
+    margin-bottom:28px;
+
 }
 
+/* ================= INPUT ================= */
+
 .login input{
+
     width:100%;
-    height:52px;
-    margin-bottom:18px;
-    padding:15px;
-    border-radius:12px;
-    border:1px solid #334155;
-    background:#0f172a;
+
+    height:48px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#101827;
+
     color:white;
-    font-size:15px;
-    outline:none;
-    transition:.3s;
+
+    padding:0 15px;
+
+    font-size:14px;
+
 }
 
 .login input:focus{
-    border-color:#38bdf8;
-    box-shadow:0 0 18px rgba(56,189,248,.35);
+
+    outline:2px solid #0ea5e9;
+
 }
 
-.login button{
+/* ================= BUTTON ================= */
+
+.login__button{
+
     width:100%;
-    height:54px;
+
+    height:50px;
+
     border:none;
-    border-radius:12px;
+
+    border-radius:10px;
+
     background:#0284c7;
+
     color:white;
-    font-size:16px;
-    font-weight:bold;
+
+    font-size:15px;
+
+    font-weight:700;
+
     cursor:pointer;
+
     transition:.3s;
+
 }
 
-.login button:hover{
+.login__button:hover{
+
     background:#0ea5e9;
-    transform:translateY(-2px);
+
 }
+
+/* ================= REGISTER ================= */
 
 .login__register{
-    margin-top:20px;
-    margin-bottom:25px;
+
+    margin-top:22px;
+
 }
 
 .login__register p{
+
     color:#94a3b8;
-    margin-bottom:8px;
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
 }
 
 .login__register a{
+
     color:#38bdf8;
-    text-decoration:none;
+
     font-weight:bold;
-    transition:.3s;
+
+    text-decoration:none;
+
 }
 
 .login__register a:hover{
-    color:#0ea5e9;
+
+    text-decoration:underline;
+
 }
 
+/* ================= FOOTER ================= */
+
 .login__footer{
-    margin-top:20px;
-    font-size:13px;
+
+    margin-top:30px;
+
     color:#94a3b8;
+
+    font-size:12px;
+
 }
 
 .login__footer strong{
+
     display:block;
-    margin-top:8px;
-    font-size:15px;
+
     color:white;
+
+    margin-top:8px;
+
+    font-size:15px;
+
 }
 
 .login__footer span{
+
     display:block;
-    margin-top:12px;
+
+    margin-top:10px;
+
     color:#64748b;
+
 }
