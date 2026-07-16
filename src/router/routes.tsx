@@ -1,68 +1,60 @@
-/****************************************************************************************
+/******************************************************************************
  * Karatech ELV
  * File : src/router/routes.tsx
  * Description :
  * Application Routes
- ****************************************************************************************/
+ ******************************************************************************/
 
 import {
-
-    BrowserRouter,
-
-    Routes,
-
-    Route
-
-}
-
-from "react-router-dom";
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 import Login from "../pages/Login";
-
+import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
-
 import EngineeringLab from "../pages/EngineeringLab";
-
 import PanelBuilder from "../pages/PanelBuilder";
 
-function AppRoutes(){
+function AppRoutes() {
 
-    return(
+  return (
 
-        <BrowserRouter basename="/v2">
+    <BrowserRouter basename="/v2">
 
-            <Routes>
+      <Routes>
 
-                <Route
-                      path="/"
-                      element={<Login />}
-              />
-                    <Route
-                    path="/dashboard"
-                   element={<Dashboard />}
-              />
-               
-                <Route
+        <Route
+          path="/"
+          element={<Login />}
+        />
 
-                    path="/engineering-lab"
+        <Route
+          path="/register"
+          element={<Register />}
+        />
 
-                    element={<EngineeringLab />}
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
 
-                />
+        <Route
+          path="/engineering-lab"
+          element={<EngineeringLab />}
+        />
 
-                <Route
+        <Route
+          path="/panel-builder"
+          element={<PanelBuilder />}
+        />
 
-                    path="/panel-builder"
+      </Routes>
 
-                    element={<PanelBuilder />}
+    </BrowserRouter>
 
-                />
-
-            </Routes>
-
-        </BrowserRouter>
-
-    );
+  );
 
 }
 
