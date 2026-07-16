@@ -1,3 +1,9 @@
+/******************************************************************************
+ * Project      : Karatech ELV
+ * File         : src/pages/Login.tsx
+ * Description  : Login Page
+ ******************************************************************************/
+
 import "./Login.css";
 import { Link } from "react-router-dom";
 
@@ -11,11 +17,29 @@ function Login() {
 
         <div className="login__card">
 
+          {/* ================= LOGO ================= */}
+
           <img
             src="/logo.png"
-            alt="KARATECH ELV"
+            alt="Karatech ELV"
             className="login__logo"
           />
+
+          {/* ================= LANGUAGE ================= */}
+
+          <div className="login__language">
+
+            <button className="active">
+              EN
+            </button>
+
+            <button>
+              FA
+            </button>
+
+          </div>
+
+          {/* ================= TITLE ================= */}
 
           <h1>KARATECH ELV</h1>
 
@@ -25,19 +49,23 @@ function Login() {
             Electrical • Automation • ELV • Industrial
           </p>
 
+          {/* ================= LOGIN ================= */}
+
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Username / نام کاربری"
           />
 
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Password / رمز عبور"
           />
 
-          <button>
-            SIGN IN
+          <button className="login__button">
+            SIGN IN | ورود
           </button>
+
+          {/* ================= REGISTER ================= */}
 
           <div className="login__register">
 
@@ -45,11 +73,17 @@ function Login() {
               Don't have an account?
             </p>
 
+            <p>
+              حساب کاربری ندارید؟
+            </p>
+
             <Link to="/register">
               CREATE ACCOUNT
             </Link>
 
           </div>
+
+          {/* ================= FOOTER ================= */}
 
           <div className="login__footer">
 
