@@ -18,12 +18,11 @@ function Login() {
         <div className="login__card">
 
           {/* ================= LOGO ================= */}
-
-          <img
-            src="/logo.png"
-            alt="Karatech ELV"
-            className="login__logo"
-          />
+<img
+  src="https://raw.githubusercontent.com/karatechelv/v2/main/public/logo.png"
+  alt="Karatech ELV"
+  className="login__logo"
+/>
 
           {/* ================= LANGUAGE ================= */}
 
