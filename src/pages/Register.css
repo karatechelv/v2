@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma,sans-serif;
+}
+
+.register{
+width:100vw;
+height:100vh;
+background:url("/background.jpg") center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.register__overlay{
+width:100%;
+height:100%;
+background:rgba(5,10,25,.72);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.register__card{
+width:450px;
+padding:40px;
+background:rgba(20,30,45,.75);
+backdrop-filter:blur(20px);
+border-radius:20px;
+border:1px solid rgba(255,255,255,.15);
+text-align:center;
+}
+
+.register__logo{
+width:220px;
+display:block;
+margin:0 auto 20px;
+}
+
+.register h1{
+color:#fff;
+margin-bottom:8px;
+}
+
+.register h2{
+color:#38bdf8;
+font-size:18px;
+margin-bottom:10px;
+font-weight:400;
+}
+
+.register__description{
+color:#94a3b8;
+margin-bottom:25px;
+}
+
+.register input{
+width:100%;
+height:50px;
+margin-bottom:15px;
+padding:15px;
+border-radius:10px;
+border:1px solid #334155;
+background:#0f172a;
+color:white;
+outline:none;
+}
+
+.register input:focus{
+border-color:#38bdf8;
+}
+
+.register button{
+width:100%;
+height:52px;
+background:#0284c7;
+border:none;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+.register button:hover{
+background:#0ea5e9;
+}
+
+.register__footer{
+margin-top:25px;
+}
+
+.register__footer p{
+color:#94a3b8;
+margin-bottom:8px;
+}
+
+.register__footer a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:bold;
+}
