@@ -1,8 +1,8 @@
 /******************************************************************************
  * Project      : Karatech ELV
  * File         : src/pages/Login.tsx
- * Description  : Login Page
- ******************************************************************************/
+ * Description  : Login Page (NEW UI)
+******************************************************************************/
 
 import "./Login.css";
 import { Link } from "react-router-dom";
@@ -11,102 +11,300 @@ function Login() {
 
   return (
 
-    <div className="login">
+<div className="login">
 
-      <div className="login__overlay">
+{/* ========================= HEADER ========================= */}
 
-        <div className="login__card">
+<header className="topbar">
 
-          {/* ================= LOGO ================= */}
+<div className="topbar__logo">
+
 <img
-  src="https://raw.githubusercontent.com/karatechelv/v2/main/public/logo.png"
-  alt="Karatech ELV"
-  className="login__logo"
+src={`${import.meta.env.BASE_URL}logo.png`}
+alt="Karatech ELV"
 />
 
-          {/* ================= LANGUAGE ================= */}
+<div>
 
-          <div className="login__language">
+<h1>KARATECH <span>ELV</span></h1>
 
-            <button className="active">
-              EN
-            </button>
+<p>ENGINEERING OPERATING SYSTEM</p>
 
-            <button>
-              FA
-            </button>
+</div>
 
-          </div>
+</div>
 
-          {/* ================= TITLE ================= */}
+<div className="topbar__center">
 
-          <h1>KARATECH ELV</h1>
+<div className="language">
 
-          <h2>Engineering Operating System</h2>
+<button>FA</button>
 
-          <p className="login__description">
-            Electrical • Automation • ELV • Industrial
-          </p>
+<button className="active">EN</button>
 
-          {/* ================= LOGIN ================= */}
+</div>
 
-          <input
-            type="text"
-            placeholder="Username / نام کاربری"
-          />
+<div className="languageText">
 
-          <input
-            type="password"
-            placeholder="Password / رمز عبور"
-          />
+<p>انتخاب زبان</p>
 
-          <button className="login__button">
-            SIGN IN | ورود
-          </button>
+<span>Language</span>
 
-          {/* ================= REGISTER ================= */}
+</div>
 
-          <div className="login__register">
+</div>
 
-            <p>
-              Don't have an account?
-            </p>
+<div className="topbar__menu">
 
-            <p>
-              حساب کاربری ندارید؟
-            </p>
+<a href="#">❔<span>راهنما</span><small>Help</small></a>
 
-            <Link to="/register">
-              CREATE ACCOUNT
-            </Link>
+<a href="#">✉<span>ارتباط با ما</span><small>Contact Us</small></a>
 
-          </div>
+</div>
 
-          {/* ================= FOOTER ================= */}
+</header>
 
-          <div className="login__footer">
+{/* ========================= BODY ========================= */}
 
-            <p>
-              Designed, Developed & Engineered by
-            </p>
+<div className="loginBody">
 
-            <strong>
-              Mohsen Keramati Layegh
-            </strong>
+{/* ================= LEFT ================= */}
 
-            <span>
-              Version 1.0.0
-            </span>
+<section className="leftPanel">
 
-          </div>
+<h2>
 
-        </div>
+سیستم مهندسی هوشمند
 
-      </div>
+</h2>
 
-    </div>
+<h3>
 
-  );
+برای ساخت تابلوهای برق صنعتی
+
+</h3>
+
+<div className="blueLine"></div>
+
+<p>
+
+Intelligent Engineering System
+
+<br/>
+
+for Industrial Electrical Panels
+
+</p>
+
+<div className="feature">
+
+⚡
+
+<div>
+
+<b>طراحی و مهندسی</b>
+
+<span>Design & Engineering</span>
+
+</div>
+
+</div>
+
+<div className="feature">
+
+⚙
+
+<div>
+
+<b>اتوماسیون و کنترل</b>
+
+<span>Automation & Control</span>
+
+</div>
+
+</div>
+
+<div className="feature">
+
+🛡
+
+<div>
+
+<b>سیستم های ELV</b>
+
+<span>ELV Systems</span>
+
+</div>
+
+</div>
+
+<div className="feature">
+
+🏭
+
+<div>
+
+<b>صنعت و زیرساخت</b>
+
+<span>Industry & Infrastructure</span>
+
+</div>
+
+</div>
+
+</section>
+
+{/* ================= CENTER ================= */}
+
+<section className="loginCard">
+
+<img
+
+className="cardLogo"
+
+src={`${import.meta.env.BASE_URL}logo.png`}
+
+alt="Karatech"
+
+/>
+
+<h2>
+
+به KARATECH ELV خوش آمدید
+
+</h2>
+
+<p>
+
+Welcome to KARATECH ELV
+
+</p>
+
+<input
+
+type="text"
+
+placeholder="نام کاربری / Username"
+
+/>
+
+<div className="passwordBox">
+
+<input
+
+type="password"
+
+placeholder="رمز عبور / Password"
+
+/>
+
+<span>👁</span>
+
+</div>
+
+<div className="remember">
+
+<label>
+
+<input type="checkbox"/>
+
+مرا به خاطر بسپار
+
+</label>
+
+<a href="#">
+
+فراموشی رمز عبور؟
+
+</a>
+
+</div>
+
+<button className="signin">
+
+ورود
+
+<br/>
+
+<span>SIGN IN</span>
+
+</button>
+
+<div className="register">
+
+<p>
+
+حساب کاربری ندارید؟
+
+</p>
+
+<p>
+
+Don't have an account?
+
+</p>
+
+<Link to="/register">
+
+ایجاد حساب کاربری
+
+</Link>
+
+</div>
+
+</section>
+
+{/* ================= RIGHT ================= */}
+
+<section className="rightPanel">
+
+<img
+
+src={`${import.meta.env.BASE_URL}panel-room.jpg`}
+
+alt="Panel Factory"
+
+/>
+
+</section>
+
+</div>
+
+{/* ========================= FOOTER ========================= */}
+
+<footer>
+
+<div>
+
+© 2026 KARATECH ELV
+
+</div>
+
+<div>
+
+Electrical • Automation • ELV • Industrial
+
+</div>
+
+<div>
+
+Designed & Developed by
+
+Mohsen Keramati Layegh
+
+</div>
+
+<div>
+
+v2.1.0
+
+</div>
+
+</footer>
+
+</div>
+
+);
 
 }
 
