@@ -20,7 +20,7 @@ function Login() {
 <div className="topbar__logo">
 
 <img
-src={`${import.meta.env.BASE_URL}logo.png`}
+src="/v2/logo.png"
 alt="Karatech ELV"
 />
 
@@ -162,7 +162,7 @@ for Industrial Electrical Panels
 
 className="cardLogo"
 
-src={`${import.meta.env.BASE_URL}logo.png`}
+src="/v2/logo.png"
 
 alt="Karatech"
 
@@ -260,7 +260,7 @@ Don't have an account?
 
 <img
 
-src={`${import.meta.env.BASE_URL}panel-room.jpg`}
+src="/v2/panel-room.jpg"
 
 alt="Panel Factory"
 
