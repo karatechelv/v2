@@ -1,48 +1,142 @@
-/*****************************************************************
+/******************************************************************************
  * Karatech ELV
  * Engineering Lab
- *****************************************************************/
-import { Link } from "react-router-dom";
+******************************************************************************/
 
 import "./EngineeringLab.css";
 
-function EngineeringLab(){
+function EngineeringLab() {
+
+    const tools = [
+
+        {
+            title:"Cable Sizing",
+            desc:"IEC 60364 Cable Size Calculation",
+            icon:"⚡"
+        },
+
+        {
+            title:"Voltage Drop",
+            desc:"Voltage Drop Calculator",
+            icon:"🔋"
+        },
+
+        {
+            title:"Short Circuit",
+            desc:"IEC60909 Fault Calculation",
+            icon:"⚠"
+        },
+
+        {
+            title:"Motor Calculation",
+            desc:"Motor Current & Protection",
+            icon:"⚙"
+        },
+
+        {
+            title:"Power Factor",
+
+            desc:"Reactive Power Compensation",
+
+            icon:"📈"
+
+        },
+
+        {
+
+            title:"Protection",
+
+            desc:"Breaker Coordination",
+
+            icon:"🛡"
+
+        },
+
+        {
+
+            title:"Transformer",
+
+            desc:"Sizing & Loading",
+
+            icon:"🔌"
+
+        },
+
+        {
+
+            title:"Generator",
+
+            desc:"Load & Capacity",
+
+            icon:"🏭"
+
+        }
+
+    ];
 
     return(
 
-        <div className="engineeringLab">
+        <div className="engineering">
 
-            <h1>
+            <div className="engineering__header">
 
-                Engineering Lab
+                <h1>
 
-            </h1>
+                    Engineering Lab
 
-            <div className="engineeringGrid">
+                </h1>
 
-                <Link to="/panel-builder">
+                <p>
 
-    <button>
+                    Electrical Engineering Toolbox
 
-        ⚡ Panel Builder
+                </p>
 
-    </button>
+            </div>
 
-</Link>
+            <div className="engineering__grid">
 
-                <button>🧮 Calculator Engine</button>
+                {
 
-                <button>📚 Standards</button>
+                    tools.map((item,index)=>(
 
-                <button>📄 BOM Generator</button>
+                        <div
 
-                <button>📐 Single Line</button>
+                            key={index}
 
-                <button>💡 Lighting</button>
+                            className="toolCard"
 
-                <button>🌍 Earthing</button>
+                        >
 
-                <button>🤖 AI Engineer</button>
+                            <div className="toolIcon">
+
+                                {item.icon}
+
+                            </div>
+
+                            <h3>
+
+                                {item.title}
+
+                            </h3>
+
+                            <p>
+
+                                {item.desc}
+
+                            </p>
+
+                            <button>
+
+                                OPEN
+
+                            </button>
+
+                        </div>
+
+                    ))
+
+                }
 
             </div>
 
