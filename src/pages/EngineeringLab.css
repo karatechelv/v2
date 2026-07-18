@@ -396,3 +396,169 @@ font-size:14px;
 }
 
 }
+
+/******************************************************************************
+LOGIN CINEMATIC FINAL
+******************************************************************************/
+
+/* تصویر کارخانه */
+
+.rightPanel{
+
+    background:#04070d;
+
+}
+
+.rightPanel img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    filter:
+
+    brightness(.72)
+
+    contrast(1.18)
+
+    saturate(.95);
+
+    transform:scale(1.05);
+
+    transition:.6s;
+
+}
+
+.rightPanel:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* نور آبی */
+
+.rightPanel::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 70% 35%,
+
+    rgba(0,180,255,.18),
+
+    transparent 40%),
+
+    linear-gradient(
+
+    90deg,
+
+    rgba(4,7,13,.88),
+
+    rgba(4,7,13,.35),
+
+    transparent);
+
+    z-index:3;
+
+}
+
+/* کارت ورود */
+
+.loginCard{
+
+    background:rgba(7,18,32,.55);
+
+    backdrop-filter:blur(18px);
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+/* لوگو */
+
+.cardLogo{
+
+    width:175px;
+
+    transition:.35s;
+
+}
+
+.cardLogo:hover{
+
+    transform:scale(1.05);
+
+    filter:
+
+    drop-shadow(0 0 35px #19b7ff);
+
+}
+
+/* دکمه */
+
+.signin{
+
+    letter-spacing:1px;
+
+}
+
+.signin:hover{
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #0095ff,
+
+    #25d2ff);
+
+}
+
+/* ورودی ها */
+
+.loginCard input{
+
+    background:#07121f;
+
+}
+
+.loginCard input::placeholder{
+
+    color:#89a8c3;
+
+}
+
+/* کل صفحه */
+
+.login{
+
+    background:
+
+    radial-gradient(circle at top right,
+
+    rgba(0,140,255,.08),
+
+    transparent 28%),
+
+    radial-gradient(circle at bottom left,
+
+    rgba(0,180,255,.06),
+
+    transparent 35%),
+
+    #04070d;
+
+}
