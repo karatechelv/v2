@@ -1,7 +1,6 @@
 /******************************************************************************
- * Project      : Karatech ELV
- * File         : src/pages/Login.tsx
- * Description  : Login Page (NEW UI)
+ Project : Karatech ELV
+ File    : Login.tsx
 ******************************************************************************/
 
 import "./Login.css";
@@ -11,300 +10,335 @@ function Login() {
 
   return (
 
-<div className="login">
+    <div className="login">
 
-{/* ========================= HEADER ========================= */}
+      {/* ================= HEADER ================= */}
 
-<header className="topbar">
+      <header className="topbar">
 
-<div className="topbar__logo">
+        <div className="topbar__logo">
 
-<img
-src="/v2/logo.png"
-alt="Karatech ELV"
-/>
+          <img
+            src="/v2/logo.png"
+            alt="Karatech ELV"
+          />
 
-<div>
+          <div>
 
-<h1>KARATECH <span>ELV</span></h1>
+            <h1>
+              KARATECH <span>ELV</span>
+            </h1>
 
-<p>ENGINEERING OPERATING SYSTEM</p>
+            <p>
+              ENGINEERING OPERATING SYSTEM
+            </p>
 
-</div>
+          </div>
 
-</div>
+        </div>
 
-<div className="topbar__center">
+        <div className="topbar__center">
 
-<div className="language">
+          <div className="language">
 
-<button>FA</button>
+            <button>
+              FA
+            </button>
 
-<button className="active">EN</button>
+            <button className="active">
+              EN
+            </button>
 
-</div>
+          </div>
 
-<div className="languageText">
+          <div className="languageText">
 
-<p>انتخاب زبان</p>
+            <p>
+              Language
+            </p>
 
-<span>Language</span>
+            <span>
+              زبان
+            </span>
 
-</div>
+          </div>
 
-</div>
+        </div>
 
-<div className="topbar__menu">
+        <nav className="topbar__menu">
 
-<a href="#">❔<span>راهنما</span><small>Help</small></a>
+          <a href="#">
 
-<a href="#">✉<span>ارتباط با ما</span><small>Contact Us</small></a>
+            <span>❔</span>
 
-</div>
+            <div>
 
-</header>
+              <small>
+                راهنما
+              </small>
 
-{/* ========================= BODY ========================= */}
+              <span>
+                Help
+              </span>
 
-<div className="loginBody">
+            </div>
 
-{/* ================= LEFT ================= */}
+          </a>
 
-<section className="leftPanel">
+          <a href="#">
 
-<h2>
+            <span>✉</span>
 
-سیستم مهندسی هوشمند
+            <div>
 
-</h2>
+              <small>
+                ارتباط با ما
+              </small>
 
-<h3>
+              <span>
+                Contact Us
+              </span>
 
-برای ساخت تابلوهای برق صنعتی
+            </div>
 
-</h3>
+          </a>
 
-<div className="blueLine"></div>
+        </nav>
 
-<p>
+      </header>
 
-Intelligent Engineering System
+      {/* ================= BODY ================= */}
 
-<br/>
+      <div className="loginBody">
 
-for Industrial Electrical Panels
+        {/* ================= LEFT ================= */}
 
-</p>
+        <div className="leftPanel">
 
-<div className="feature">
+          <h2>
 
-⚡
+            سیستم مهندسی هوشمند
 
-<div>
+            <br />
 
-<b>طراحی و مهندسی</b>
+            برای ساخت تابلوهای برق صنعتی
 
-<span>Design & Engineering</span>
+          </h2>
 
-</div>
+          <h3>
 
-</div>
+            Intelligent Engineering System
 
-<div className="feature">
+            <br />
 
-⚙
+            for Industrial Electrical Panels
 
-<div>
+          </h3>
 
-<b>اتوماسیون و کنترل</b>
+          <div className="blueLine"></div>
 
-<span>Automation & Control</span>
+          <div className="feature">
 
-</div>
+            <b>⚡</b>
 
-</div>
+            <div>
 
-<div className="feature">
+              <b>طراحی و مهندسی</b>
 
-🛡
+              <span>Design & Engineering</span>
 
-<div>
+            </div>
 
-<b>سیستم های ELV</b>
+          </div>
 
-<span>ELV Systems</span>
+          <div className="feature">
 
-</div>
+            <b>⚙</b>
 
-</div>
+            <div>
 
-<div className="feature">
+              <b>اتوماسیون و کنترل</b>
 
-🏭
+              <span>Automation & Control</span>
 
-<div>
+            </div>
 
-<b>صنعت و زیرساخت</b>
+          </div>
 
-<span>Industry & Infrastructure</span>
+          <div className="feature">
 
-</div>
+            <b>🛡</b>
 
-</div>
+            <div>
 
-</section>
+              <b>سیستم های ELV</b>
 
-{/* ================= CENTER ================= */}
+              <span>ELV Systems</span>
 
-<section className="loginCard">
+            </div>
 
-<img
+          </div>
 
-className="cardLogo"
+          <div className="feature">
 
-src="/v2/logo.png"
+            <b>🏭</b>
 
-alt="Karatech"
+            <div>
 
-/>
+              <b>صنعت و زیرساخت</b>
 
-<h2>
+              <span>Industry & Infrastructure</span>
 
-به KARATECH ELV خوش آمدید
+            </div>
 
-</h2>
+          </div>
 
-<p>
+        </div>
 
-Welcome to KARATECH ELV
+                {/* ================= CENTER ================= */}
 
-</p>
+        <div className="loginCard">
 
-<input
+          <img
+            className="cardLogo"
+            src="/v2/logo.png"
+            alt="Karatech ELV"
+          />
 
-type="text"
+          <h2>
 
-placeholder="نام کاربری / Username"
+            به KARATECH ELV خوش آمدید
 
-/>
+          </h2>
 
-<div className="passwordBox">
+          <p>
 
-<input
+            Welcome to KARATECH ELV
 
-type="password"
+          </p>
 
-placeholder="رمز عبور / Password"
+          <input
+            type="text"
+            placeholder="نام کاربری / Username"
+          />
 
-/>
+          <div className="passwordBox">
 
-<span>👁</span>
+            <input
+              type="password"
+              placeholder="رمز عبور / Password"
+            />
 
-</div>
+            <span>👁</span>
 
-<div className="remember">
+          </div>
 
-<label>
+          <div className="remember">
 
-<input type="checkbox"/>
+            <label>
 
-مرا به خاطر بسپار
+              <input type="checkbox" />
 
-</label>
+              مرا به خاطر بسپار
 
-<a href="#">
+            </label>
 
-فراموشی رمز عبور؟
+            <a href="#">
 
-</a>
+              فراموشی رمز عبور؟
 
-</div>
+            </a>
 
-<button className="signin">
+          </div>
 
-ورود
+          <button className="signin">
 
-<br/>
+            ورود
 
-<span>SIGN IN</span>
+            <span>
 
-</button>
+              SIGN IN
 
-<div className="register">
+            </span>
 
-<p>
+          </button>
 
-حساب کاربری ندارید؟
+          <div className="register">
 
-</p>
+            <p>
 
-<p>
+              حساب کاربری ندارید؟
 
-Don't have an account?
+            </p>
 
-</p>
+            <p>
 
-<Link to="/register">
+              Don't have an account?
 
-ایجاد حساب کاربری
+            </p>
 
-</Link>
+            <Link to="/register">
 
-</div>
+              ایجاد حساب کاربری
 
-</section>
+            </Link>
 
-{/* ================= RIGHT ================= */}
+          </div>
 
-<section className="rightPanel">
+        </div>
 
-<img
+        {/* ================= RIGHT ================= */}
 
-src="/v2/panel-room.jpg"
+        <div className="rightPanel">
 
-alt="Panel Factory"
+          <img
+            src="/v2/panel-room.jpg"
+            alt="Panel Factory"
+          />
 
-/>
+        </div>
 
-</section>
+              </div>
 
-</div>
+      {/* ================= FOOTER ================= */}
 
-{/* ========================= FOOTER ========================= */}
+      <footer>
 
-<footer>
+        <div>
 
-<div>
+          © 2026 KARATECH ELV
 
-© 2026 KARATECH ELV
+        </div>
 
-</div>
+        <div>
 
-<div>
+          Electrical • Automation • ELV • Industrial
 
-Electrical • Automation • ELV • Industrial
+        </div>
 
-</div>
+        <div>
 
-<div>
+          Designed & Developed by
 
-Designed & Developed by
+          <br />
 
-Mohsen Keramati Layegh
+          <strong>
 
-</div>
+            Mohsen Keramati Layegh
 
-<div>
+          </strong>
 
-v2.1.0
+          <br />
 
-</div>
+          v2.1.0
 
-</footer>
+        </div>
 
-</div>
+      </footer>
 
-);
+    </div>
+
+  );
 
 }
 
