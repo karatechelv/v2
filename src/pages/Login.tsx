@@ -197,7 +197,7 @@ function Login() {
 
                 {/* ================= CENTER ================= */}
 
-        <div className="loginCard">
+         <div className="loginCard">
 
           <img
             className="cardLogo"
@@ -206,15 +206,11 @@ function Login() {
           />
 
           <h2>
-
             به KARATECH ELV خوش آمدید
-
           </h2>
 
           <p>
-
             Welcome to KARATECH ELV
-
           </p>
 
           <input
@@ -237,45 +233,47 @@ function Login() {
 
             <label>
 
-              <input type="checkbox" />
+              <input type="checkbox"/>
 
-              مرا به خاطر بسپار
+              <span>
+                مرا به خاطر بسپار
+              </span>
 
             </label>
 
             <a href="#">
-
               فراموشی رمز عبور؟
-
             </a>
 
           </div>
 
           <button className="signin">
 
-            ورود
+            <div>
 
-            <span>
+              ورود
 
-              SIGN IN
+              <span>
+                SIGN IN
+              </span>
 
-            </span>
+            </div>
+
+            <strong>
+              →
+            </strong>
 
           </button>
 
           <div className="register">
 
             <p>
-
               حساب کاربری ندارید؟
-
             </p>
 
-            <p>
-
+            <span>
               Don't have an account?
-
-            </p>
+            </span>
 
             <Link to="/register">
 
@@ -286,7 +284,7 @@ function Login() {
           </div>
 
         </div>
-
+       
         {/* ================= RIGHT ================= */}
 
         <div className="rightPanel">
@@ -298,7 +296,7 @@ function Login() {
 
         </div>
 
-              </div>
+      </div>
 
       {/* ================= FOOTER ================= */}
 
@@ -306,29 +304,39 @@ function Login() {
 
         <div>
 
-          © 2026 KARATECH ELV
+          © 2026 KARATECH ELV. All rights reserved.
 
         </div>
 
         <div>
 
-          Electrical • Automation • ELV • Industrial
+          Electrical&nbsp;&nbsp;•&nbsp;&nbsp;Automation&nbsp;&nbsp;•&nbsp;&nbsp;ELV&nbsp;&nbsp;•&nbsp;&nbsp;Industrial
 
         </div>
 
-        <div>
+        <div
+          style={{
+            textAlign: "right",
+            lineHeight: "20px"
+          }}
+        >
 
-          Designed & Developed by
-
-          <br />
-
-          <strong>
-
-            Mohsen Keramati Layegh
-
-          </strong>
+          طراحی و توسعه توسط محسن کرامتی لایق
 
           <br />
+
+          Designed &amp; Developed by Mohsen Keramati Layegh
+
+        </div>
+
+        <div
+          style={{
+            padding: "8px 18px",
+            borderRadius: "18px",
+            background: "#111c2a",
+            border: "1px solid rgba(255,255,255,.08)"
+          }}
+        >
 
           v2.1.0
 
