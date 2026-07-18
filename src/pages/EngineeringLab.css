@@ -1,41 +1,398 @@
-/*****************************************************************
- * Karatech ELV
- *****************************************************************/
+/******************************************************************************
+Karatech ELV
+EngineeringLab.css
+******************************************************************************/
 
-.engineeringLab{
+.engineering{
 
-    padding:30px;
+width:100%;
 
-}
+padding:40px;
 
-.engineeringGrid{
+min-height:100%;
 
-    margin-top:30px;
+background:
+radial-gradient(circle at top right,
+rgba(0,170,255,.08),
+transparent 40%),
 
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-
-    gap:20px;
-
-}
-
-.engineeringGrid button{
-
-    height:90px;
-
-    border-radius:12px;
-
-    background:#1e293b;
-
-    color:white;
-
-    font-size:18px;
+linear-gradient(
+180deg,
+#060b14,
+#04070d);
 
 }
 
-.engineeringGrid button:hover{
+.engineering__header{
 
-    background:#2563eb;
+margin-bottom:45px;
+
+}
+
+.engineering__header h1{
+
+font-size:34px;
+
+font-weight:700;
+
+color:#fff;
+
+margin-bottom:10px;
+
+}
+
+.engineering__header p{
+
+font-size:15px;
+
+color:#8ea8c3;
+
+letter-spacing:1px;
+
+}
+
+.engineering__grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:28px;
+
+}
+
+.toolCard{
+
+position:relative;
+
+overflow:hidden;
+
+background:#0b1524;
+
+border:1px solid rgba(255,255,255,.05);
+
+border-radius:22px;
+
+padding:30px;
+
+transition:.35s;
+
+cursor:pointer;
+
+min-height:240px;
+
+}
+
+.toolCard::before{
+
+content:"";
+
+position:absolute;
+
+right:-70px;
+
+top:-70px;
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(0,170,255,.12),
+transparent 70%);
+
+transition:.35s;
+
+}
+
+.toolCard:hover{
+
+transform:translateY(-8px);
+
+border-color:#17b8ff;
+
+box-shadow:
+0 15px 45px rgba(0,170,255,.18);
+
+}
+
+.toolCard:hover::before{
+
+transform:scale(1.5);
+
+}
+
+.toolIcon{
+
+width:64px;
+
+height:64px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+border-radius:18px;
+
+background:
+
+linear-gradient(
+135deg,
+#0d6dbd,
+#14c1ff);
+
+color:white;
+
+margin-bottom:22px;
+
+box-shadow:
+0 10px 25px rgba(0,170,255,.22);
+
+}
+
+.toolCard h3{
+
+font-size:22px;
+
+color:white;
+
+margin-bottom:14px;
+
+}
+
+.toolCard p{
+
+font-size:14px;
+
+line-height:28px;
+
+color:#91a8c2;
+
+margin-bottom:28px;
+
+}
+
+.toolCard button{
+
+width:100%;
+
+height:48px;
+
+border:none;
+
+border-radius:14px;
+
+background:
+
+linear-gradient(
+90deg,
+#0d6dbd,
+#18c2ff);
+
+color:white;
+
+font-size:15px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.toolCard button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:
+0 12px 30px rgba(0,170,255,.25);
+
+}
+
+/*==================== HOVER ====================*/
+
+.toolCard:hover h3{
+
+color:#18c2ff;
+
+}
+
+.toolCard:hover p{
+
+color:#dcecff;
+
+}
+
+.toolCard:hover .toolIcon{
+
+transform:rotate(8deg) scale(1.08);
+
+}
+
+.toolIcon{
+
+transition:.35s;
+
+}
+
+/*==================== ANIMATION ====================*/
+
+.toolCard{
+
+animation:toolFade .6s ease both;
+
+}
+
+.toolCard:nth-child(2){animation-delay:.08s;}
+.toolCard:nth-child(3){animation-delay:.16s;}
+.toolCard:nth-child(4){animation-delay:.24s;}
+.toolCard:nth-child(5){animation-delay:.32s;}
+.toolCard:nth-child(6){animation-delay:.40s;}
+.toolCard:nth-child(7){animation-delay:.48s;}
+.toolCard:nth-child(8){animation-delay:.56s;}
+
+@keyframes toolFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================== SCROLL ====================*/
+
+.engineering::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+.engineering::-webkit-scrollbar-thumb{
+
+background:#1597e5;
+
+border-radius:20px;
+
+}
+
+/*==================== RESPONSIVE ====================*/
+
+@media(max-width:1400px){
+
+.engineering__grid{
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:1100px){
+
+.engineering__grid{
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.engineering{
+
+padding:20px;
+
+}
+
+.engineering__header h1{
+
+font-size:26px;
+
+}
+
+.engineering__grid{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.toolCard{
+
+padding:24px;
+
+min-height:210px;
+
+}
+
+.toolIcon{
+
+width:56px;
+
+height:56px;
+
+font-size:26px;
+
+}
+
+.toolCard h3{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.engineering{
+
+padding:15px;
+
+}
+
+.toolCard{
+
+border-radius:18px;
+
+padding:18px;
+
+}
+
+.toolCard button{
+
+height:44px;
+
+font-size:14px;
+
+}
 
 }
