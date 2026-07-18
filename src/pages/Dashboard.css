@@ -1,130 +1,579 @@
-/*****************************************************************
- * Karatech ELV
- * File : src/pages/Dashboard.css
- * Description :
- * Dashboard Layout
- *****************************************************************/
-
-/* ==============================================================
-   DASHBOARD
-============================================================== */
+/******************************************************************************
+Karatech ELV
+Dashboard.css
+******************************************************************************/
 
 .dashboard{
 
-    width:100%;
+width:100%;
 
-    height:100vh;
+height:100vh;
 
-    display:flex;
+display:flex;
 
-    overflow:hidden;
+background:#05080f;
 
-    background:#0f172a;
+overflow:hidden;
 
 }
 
-/* ==============================================================
-   MAIN
-============================================================== */
+/*==================== MAIN ====================*/
 
 .dashboard__main{
 
-    flex:1;
+flex:1;
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
+
+overflow:hidden;
 
 }
 
-/* ==============================================================
-   CONTENT
-============================================================== */
+/*==================== CONTENT ====================*/
 
 .dashboard__content{
 
-    flex:1;
+flex:1;
 
-    padding:25px;
+padding:40px;
 
-    overflow:auto;
+overflow-y:auto;
+
+background:
+
+radial-gradient(circle at top right,
+rgba(0,170,255,.08),
+transparent 40%),
+
+linear-gradient(
+180deg,
+#060b14,
+#04070d
+);
 
 }
 
-/* ==============================================================
-   PAGE TITLE
-============================================================== */
-
 .dashboard__title{
 
-    color:#ffffff;
+font-size:34px;
 
-    font-size:30px;
+font-weight:700;
 
-    margin-bottom:12px;
+color:#ffffff;
+
+margin-bottom:8px;
 
 }
 
 .dashboard__subtitle{
 
-    color:#94a3b8;
+font-size:15px;
 
-    margin-bottom:30px;
+color:#7f97b0;
+
+margin-bottom:45px;
+
+letter-spacing:1px;
 
 }
 
-/* ==============================================================
-   CARDS
-============================================================== */
+/*==================== GRID ====================*/
 
 .dashboard__cards{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:
 
-    gap:20px;
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
 
 }
 
-/* ==============================================================
-   CARD
-============================================================== */
+/*==================== CARD ====================*/
 
 .dashboard__card{
 
-    background:#1e293b;
+position:relative;
 
-    border:1px solid #334155;
+background:rgba(10,18,30,.88);
 
-    border-radius:12px;
+border:1px solid rgba(255,255,255,.06);
 
-    padding:20px;
+border-radius:22px;
 
-    transition:.25s;
+padding:30px;
+
+min-height:240px;
+
+overflow:hidden;
+
+transition:.35s;
+
+cursor:pointer;
+
+box-shadow:
+
+0 10px 35px rgba(0,0,0,.30);
+
+}
+
+.dashboard__card::before{
+
+content:"";
+
+position:absolute;
+
+top:-120px;
+
+right:-120px;
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(0,170,255,.18),
+transparent 70%);
+
+transition:.4s;
 
 }
 
 .dashboard__card:hover{
 
-    transform:translateY(-5px);
+transform:translateY(-8px);
 
-    border-color:#38bdf8;
+border-color:#11b7ff;
+
+box-shadow:
+
+0 18px 45px rgba(0,170,255,.18);
+
+}
+
+.dashboard__card:hover::before{
+
+transform:scale(1.25);
 
 }
 
 .dashboard__card h3{
 
-    margin-bottom:15px;
+font-size:24px;
 
-    color:#38bdf8;
+font-weight:700;
+
+color:#ffffff;
+
+margin-bottom:18px;
+
+position:relative;
+
+z-index:2;
 
 }
 
 .dashboard__card p{
 
-    color:#cbd5e1;
+font-size:15px;
 
-    line-height:1.8;
+line-height:30px;
+
+color:#9cb2c7;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.dashboard__card::after{
+
+content:"";
+
+position:absolute;
+
+left:30px;
+
+bottom:28px;
+
+width:65px;
+
+height:4px;
+
+border-radius:50px;
+
+background:#10b7ff;
+
+transition:.35s;
+
+}
+
+.dashboard__card:hover::after{
+
+width:120px;
+
+}
+
+/*==================== CARD ICON ====================*/
+
+.dashboard__card h3{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+}
+
+.dashboard__card h3::before{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+width:56px;
+
+height:56px;
+
+border-radius:16px;
+
+background:linear-gradient(
+135deg,
+#0d6dbe,
+#10c0ff
+);
+
+font-size:24px;
+
+box-shadow:
+0 10px 25px rgba(16,192,255,.25);
+
+}
+
+.dashboard__card:nth-child(1) h3::before{
+
+content:"⚡";
+
+}
+
+.dashboard__card:nth-child(2) h3::before{
+
+content:"📂";
+
+}
+
+.dashboard__card:nth-child(3) h3::before{
+
+content:"🖥";
+
+}
+
+.dashboard__card:nth-child(4) h3::before{
+
+content:"🔌";
+
+}
+
+/*==================== GLOW ====================*/
+
+.dashboard__card .cardGlow{
+
+position:absolute;
+
+right:-80px;
+
+bottom:-80px;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(0,170,255,.16),
+transparent 70%);
+
+filter:blur(22px);
+
+pointer-events:none;
+
+}
+
+/*==================== HOVER ====================*/
+
+.dashboard__card:hover h3{
+
+color:#22c6ff;
+
+}
+
+.dashboard__card:hover p{
+
+color:#d9ecff;
+
+}
+
+.dashboard__card:hover{
+
+background:rgba(12,22,36,.96);
+
+}
+
+/*==================== ANIMATION ====================*/
+
+.dashboard__card{
+
+animation:cardFade .6s ease both;
+
+}
+
+.dashboard__card:nth-child(2){
+
+animation-delay:.1s;
+
+}
+
+.dashboard__card:nth-child(3){
+
+animation-delay:.2s;
+
+}
+
+.dashboard__card:nth-child(4){
+
+animation-delay:.3s;
+
+}
+
+@keyframes cardFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================== SCROLLBAR ====================*/
+
+.dashboard__content::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+.dashboard__content::-webkit-scrollbar-track{
+
+background:#07111d;
+
+}
+
+.dashboard__content::-webkit-scrollbar-thumb{
+
+background:#147dc5;
+
+border-radius:30px;
+
+}
+
+.dashboard__content::-webkit-scrollbar-thumb:hover{
+
+background:#1dbdff;
+
+}
+
+/*==================== TITLE EFFECT ====================*/
+
+.dashboard__title{
+
+position:relative;
+
+display:inline-block;
+
+padding-bottom:14px;
+
+}
+
+.dashboard__title::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:0;
+
+width:90px;
+
+height:4px;
+
+border-radius:20px;
+
+background:linear-gradient(
+90deg,
+#009dff,
+#18d2ff
+);
+
+}
+
+/*==================== RESPONSIVE ====================*/
+
+@media(max-width:1600px){
+
+.dashboard__cards{
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:1200px){
+
+.dashboard__content{
+
+padding:30px;
+
+}
+
+.dashboard__cards{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard__title{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard__content{
+
+padding:20px;
+
+}
+
+.dashboard__title{
+
+font-size:24px;
+
+}
+
+.dashboard__subtitle{
+
+font-size:13px;
+
+margin-bottom:30px;
+
+}
+
+.dashboard__card{
+
+padding:24px;
+
+min-height:auto;
+
+}
+
+.dashboard__card h3{
+
+font-size:20px;
+
+}
+
+.dashboard__card h3::before{
+
+width:48px;
+
+height:48px;
+
+font-size:20px;
+
+}
+
+.dashboard__card p{
+
+font-size:14px;
+
+line-height:26px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.dashboard__content{
+
+padding:15px;
+
+}
+
+.dashboard__card{
+
+border-radius:18px;
+
+padding:20px;
+
+}
+
+.dashboard__card::after{
+
+width:45px;
+
+}
+
+.dashboard__card:hover::after{
+
+width:85px;
+
+}
+
+.dashboard__title{
+
+font-size:20px;
+
+}
+
+.dashboard__subtitle{
+
+font-size:12px;
+
+}
 
 }
