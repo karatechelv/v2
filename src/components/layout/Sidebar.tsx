@@ -1,71 +1,71 @@
-/*****************************************************************
+/******************************************************************************
  * Karatech ELV
- * File : src/components/layout/Sidebar.tsx
- * Description :
- * Main Sidebar
- *****************************************************************/
+ * File : Sidebar.tsx
+******************************************************************************/
 
 import "./Sidebar.css";
 
 function Sidebar() {
 
-    const menu = [
-
-        "🏠 Dashboard",
-
-        "📁 Projects",
-
-        "⚡ Engineering Lab",
-
-        "🧮 Calculators",
-
-        "📚 Standards",
-
-        "📊 Tables",
-
-        "📄 Reports",
-
-        "📥 Downloads",
-
-        "🤖 AI Engineer",
-
-        "⚙ Settings"
-
-    ];
-
     return (
 
         <aside className="sidebar">
 
-            <div className="sidebar__logo">
+            <div className="sidebar__top">
 
-                KARATECH
+                <img
+                    src="/v2/logo.png"
+                    alt="Karatech ELV"
+                    className="sidebar__logo"
+                />
+
+                <h2>KARATECH</h2>
+
+                <span>Engineering OS</span>
 
             </div>
 
             <nav className="sidebar__menu">
 
-                {
+                <button className="sidebar__item active">
+                    ⚡ Engineering Lab
+                </button>
 
-                    menu.map((item,index)=>(
+                <button className="sidebar__item">
+                    📂 Projects
+                </button>
 
-                        <button
+                <button className="sidebar__item">
+                    🖥 Panel Builder
+                </button>
 
-                            key={index}
+                <button className="sidebar__item">
+                    🔌 Wiring
+                </button>
 
-                            className="sidebar__button"
+                <button className="sidebar__item">
+                    ✔ Quality Control
+                </button>
 
-                        >
+                <button className="sidebar__item">
+                    📘 Standards
+                </button>
 
-                            {item}
+                <button className="sidebar__item">
+                    📊 Management
+                </button>
 
-                        </button>
-
-                    ))
-
-                }
+                <button className="sidebar__item">
+                    🦺 HSE
+                </button>
 
             </nav>
+
+            <div className="sidebar__footer">
+
+                Version 1.0.0
+
+            </div>
 
         </aside>
 
