@@ -30,71 +30,83 @@ function Dashboard() {
                         Smart Electrical Engineering Platform
                     </p>
 
-                    <div className="dashboard__cards">
+                  <div className="dashboard__cards">
 
-                        <div className="dashboard__card">
+    <div className="dashboard__card">
+        <div className="cardGlow"></div>
+        <h3>Engineering Lab</h3>
+        <p>
+            Electrical calculations, Cable Sizing,
+            Voltage Drop, Short Circuit,
+            Motor Starting, Load Calculation.
+        </p>
+    </div>
 
-                            <h3>⚡ Engineering Lab</h3>
+    <div className="dashboard__card">
+        <div className="cardGlow"></div>
+        <h3>Projects</h3>
+        <p>
+            Project Management,
+            Documentation,
+            Drawings,
+            Revision Control,
+            Reports.
+        </p>
+    </div>
 
-                            <p>
+    <div className="dashboard__card">
+        <div className="cardGlow"></div>
+        <h3>Panel Builder</h3>
+        <p>
+            MCC Panel,
+            PCC Panel,
+            Control Panel,
+            BOM Generator,
+            Layout Designer.
+        </p>
+    </div>
 
-                                Electrical calculations,
-                                Cable sizing,
-                                Voltage Drop,
-                                Short Circuit,
-                                Protection Coordination
+    <div className="dashboard__card">
+        <div className="cardGlow"></div>
+        <h3>Wiring</h3>
+        <p>
+            Terminal Plan,
+            Cable Numbering,
+            Ferrule,
+            Routing,
+            Interconnection.
+        </p>
+    </div>
 
-                            </p>
+</div>
 
-                        </div>
+<div className="dashboard__quick">
 
-                        <div className="dashboard__card">
+    <div className="quickCard">
+        <h4>Quality Control</h4>
+        <p>Inspection Forms, FAT, SAT, Checklist.</p>
+        <span>OPEN →</span>
+    </div>
 
-                            <h3>🗂 Projects</h3>
+    <div className="quickCard">
+        <h4>Standards</h4>
+        <p>IEC • NEC • IEC61439 • NFPA • IPS</p>
+        <span>OPEN →</span>
+    </div>
 
-                            <p>
+    <div className="quickCard">
+        <h4>Management</h4>
+        <p>Planning, KPI, Strategy, Reports.</p>
+        <span>OPEN →</span>
+    </div>
 
-                                Project Management,
-                                Documents,
-                                Drawings,
-                                Revisions,
-                                Progress Monitoring
+    <div className="quickCard">
+        <h4>HSE</h4>
+        <p>Risk Assessment, Permit, PPE, Safety.</p>
+        <span>OPEN →</span>
+    </div>
 
-                            </p>
-
-                        </div>
-
-                        <div className="dashboard__card">
-
-                            <h3>🖥 Panel Builder</h3>
-
-                            <p>
-
-                                Build Electrical Panels,
-                                BOM Generator,
-                                Layout Designer,
-                                Component Library
-
-                            </p>
-
-                        </div>
-
-                        <div className="dashboard__card">
-
-                            <h3>🔌 Wiring</h3>
-
-                            <p>
-
-                                Wiring Diagram,
-                                Terminal Plan,
-                                Cable Routing,
-                                Cable Numbering
-
-                            </p>
-
-                        </div>
-
-                    </div>
+</div>
 
                 </div>
 
