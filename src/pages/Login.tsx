@@ -166,441 +166,293 @@ function Login() {
 
                     </p>
 
-                                 {/*==================== FEATURES ====================*/}
+                    {/*==================== FEATURES ====================*/}
 
-                <div className="feature">
+                    <div className="feature">
 
-                    <b>⚡</b>
+                        <b>⚡</b>
 
-                    <div>
+                        <div>
 
-                        <b>
+                            <b>
 
-                            طراحی و مهندسی
+                                طراحی و مهندسی
 
-                        </b>
+                            </b>
 
-                        <span>
+                            <span>
 
-                            Design & Engineering
+                                Design & Engineering
 
-                        </span>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div className="feature">
+
+                        <b>⚙</b>
+
+                        <div>
+
+                            <b>
+
+                                اتوماسیون و کنترل
+
+                            </b>
+
+                            <span>
+
+                                Automation & Control
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div className="feature">
+
+                        <b>🛡</b>
+
+                        <div>
+
+                            <b>
+
+                                سیستم های ELV
+
+                            </b>
+
+                            <span>
+
+                                ELV Systems
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div className="feature">
+
+                        <b>🏭</b>
+
+                        <div>
+
+                            <b>
+
+                                صنعت و زیرساخت
+
+                            </b>
+
+                            <span>
+
+                                Industry & Infrastructure
+
+                            </span>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <div className="feature">
+                {/*==================== LOGIN CARD ====================*/}
 
-                    <b>⚙</b>
+                <div className="loginCard">
 
-                    <div>
+                    {/*==================== LOGO ====================*/}
 
-                        <b>
-
-                            اتوماسیون و کنترل
-
-                        </b>
-
-                        <span>
-
-                            Automation & Control
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div className="feature">
-
-                    <b>🛡</b>
-
-                    <div>
-
-                        <b>
-
-                            سیستم های ELV
-
-                        </b>
-
-                        <span>
-
-                            ELV Systems
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div className="feature">
-
-                    <b>🏭</b>
-
-                    <div>
-
-                        <b>
-
-                            صنعت و زیرساخت
-
-                        </b>
-
-                        <span>
-
-                            Industry & Infrastructure
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            {/*==================== LOGIN CARD ====================*/}
-
-            <div className="loginCard">
-
-                {/*==================== LOGO ====================*/}
-
-                <img
-                    className="cardLogo"
-                    src="/v2/logo.png"
-                    alt="Karatech ELV"
-                />
-
-                {/*==================== TITLE ====================*/}
-
-                <h2>
-
-                    به KARATECH ELV خوش آمدید
-
-                </h2>
-
-                <p>
-
-                    Welcome to KARATECH ELV
-
-                </p>
-
-                {/*==================== USERNAME ====================*/}
-
-                <input
-                    type="text"
-                    placeholder="نام کاربری / Username"
-                />
-
-                {/*==================== PASSWORD ====================*/}
-
-                <div className="passwordBox">
-
-                                 {/*==================== PASSWORD ====================*/}
-
-                <div className="passwordBox">
-
-                    <input
-                        type="password"
-                        placeholder="رمز عبور / Password"
+                    <img
+                        className="cardLogo"
+                        src="/v2/logo.png"
+                        alt="Karatech ELV"
                     />
 
-                    <span>
+                    {/*==================== TITLE ====================*/}
 
-                        👁
+                    <h2>
 
-                    </span>
+                        به KARATECH ELV خوش آمدید
 
-                </div>
+                    </h2>
 
-                {/*==================== REMEMBER ====================*/}
+                    <p>
 
-                <div className="remember">
+                        Welcome to KARATECH ELV
 
-                    <label>
+                    </p>
+
+                    {/*==================== USERNAME ====================*/}
+
+                    <input
+                        type="text"
+                        placeholder="نام کاربری / Username"
+                    />
+
+                    {/*==================== PASSWORD ====================*/}
+
+                    <div className="passwordBox">
 
                         <input
-                            type="checkbox"
+                            type="password"
+                            placeholder="رمز عبور / Password"
                         />
 
                         <span>
 
-                            مرا به خاطر بسپار
-
-                        </span>
-
-                    </label>
-
-                    <a href="#">
-
-                        فراموشی رمز عبور؟
-
-                    </a>
-
-                </div>
-
-                {/*==================== SIGN IN ====================*/}
-
-                <button
-                    className="signin"
-                >
-
-                    <div>
-
-                        ورود
-
-                        <span>
-
-                            SIGN IN
+                            👁
 
                         </span>
 
                     </div>
 
-                    <strong>
+                    {/*==================== REMEMBER ====================*/}
 
-                        →
+                    <div className="remember">
 
-                    </strong>
+                        <label>
 
-                </button>
+                            <input
+                                type="checkbox"
+                            />
 
-                {/*==================== REGISTER ====================*/}
+                            <span>
 
-                <div className="register">
+                                مرا به خاطر بسپار
 
-                    <p>
+                            </span>
 
-                        حساب کاربری ندارید؟
+                        </label>
 
-                    </p>
+                        <a href="#">
 
-                    <span>
+                            فراموشی رمز عبور؟
 
-                        Don't have an account?
+                        </a>
 
-                    </span>
+                    </div>
 
-                    <Link
-                        to="/register"
+                    {/*==================== SIGN IN ====================*/}
+
+                    <button
+                        className="signin"
                     >
 
-                        ایجاد حساب کاربری
+                        <div>
 
-                    </Link>
+                            ورود
+
+                            <span>
+
+                                SIGN IN
+
+                            </span>
+
+                        </div>
+
+                        <strong>
+
+                            →
+
+                        </strong>
+
+                    </button>
+
+                    {/*==================== REGISTER ====================*/}
+
+                    <div className="register">
+
+                        <p>
+
+                            حساب کاربری ندارید؟
+
+                        </p>
+
+                        <span>
+
+                            Don't have an account?
+
+                        </span>
+
+                        <Link
+                            to="/register"
+                        >
+
+                            ایجاد حساب کاربری
+
+                        </Link>
+
+                    </div>
+
+                </div>
+
+                {/*==================== RIGHT PANEL ====================*/}
+
+                <div className="rightPanel">
+
+                    <img
+                        src="/v2/panel-room.jpg"
+                        alt="Panel Factory"
+                    />
 
                 </div>
 
             </div>
 
-            {/*==================== RIGHT PANEL ====================*/}
+            {/*==================================================================
+                                FOOTER
+            ==================================================================*/}
 
-            <div className="rightPanel">
+            <footer>
 
-                         {/*==================== RIGHT PANEL ====================*/}
+                {/*==================== COPYRIGHT ====================*/}
 
-            <div className="rightPanel">
+                <div>
 
-                {/*==================== FACTORY IMAGE ====================*/}
+                    © 2026 KARATECH ELV
 
-                <img
-                    src="/v2/panel-room.jpg"
-                    alt="Panel Factory"
-                />
+                </div>
 
-            </div>
+                {/*==================== DESCRIPTION ====================*/}
+
+                <div>
+
+                    Electrical • Automation • ELV • Industrial
+
+                </div>
+
+                {/*==================== DEVELOPER ====================*/}
+
+                <div>
+
+                    Designed & Developed by
+
+                    <br />
+
+                    <strong>
+
+                        Mohsen Keramati Layegh
+
+                    </strong>
+
+                </div>
+
+                {/*==================== VERSION ====================*/}
+
+                <div>
+
+                    v2.1.0
+
+                </div>
+
+            </footer>
 
         </div>
 
-        {/*==================================================================
-                                FOOTER
-        ==================================================================*/}
-
-        <footer>
-
-            {/*==================== COPYRIGHT ====================*/}
-
-            <div>
-
-                © 2026 KARATECH ELV
-
-            </div>
-
-            {/*==================== DESCRIPTION ====================*/}
-
-            <div>
-
-                Electrical • Automation • ELV • Industrial
-
-            </div>
-
-            {/*==================== DEVELOPER ====================*/}
-
-            <div>
-
-                Designed & Developed by
-
-                <br />
-
-                <strong>
-
-                    Mohsen Keramati Layegh
-
-                </strong>
-
-            </div>
-
-            {/*==================== VERSION ====================*/}
-
-            <div>
-
-                v2.1.0
-
-            </div>
-
-        </footer>
-
-    </div>
-
-);
+    );
 
 }
 
 export default Login;
-
-                /******************************************************************************
-LOGIN PREMIUM FINAL
-******************************************************************************/
-
-/*==================== LOGIN CARD ====================*/
-
-.loginCard{
-
-    position:relative;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:60px;
-
-    background:
-
-    linear-gradient(
-        180deg,
-        rgba(8,14,25,.95),
-        rgba(5,10,18,.97)
-    );
-
-    backdrop-filter:blur(22px);
-
-    border-left:1px solid rgba(255,255,255,.08);
-
-    border-right:1px solid rgba(255,255,255,.08);
-
-    overflow:hidden;
-
-}
-
-.loginCard::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:650px;
-
-    height:650px;
-
-    border-radius:50%;
-
-    background:
-
-    radial-gradient(circle,
-
-    rgba(0,170,255,.12),
-
-    transparent 70%);
-
-    top:-260px;
-
-    right:-220px;
-
-    pointer-events:none;
-
-}
-
-.loginCard>*{
-
-    position:relative;
-
-    z-index:2;
-
-}
-
-/*==================== TITLE ====================*/
-
-.loginCard h2{
-
-    font-size:31px;
-
-    font-weight:700;
-
-    margin-top:12px;
-
-    margin-bottom:10px;
-
-    text-align:center;
-
-}
-
-.loginCard p{
-
-    text-align:center;
-
-    color:#8ea8c2;
-
-    margin-bottom:35px;
-
-    line-height:28px;
-
-}
-
-/*==================== INPUT ====================*/
-
-.loginCard input{
-
-    width:100%;
-
-    height:58px;
-
-    padding:0 20px;
-
-    margin-bottom:18px;
-
-    background:#08131f;
-
-    border:1px solid #24415f;
-
-    border-radius:15px;
-
-    color:#fff;
-
-    font-size:15px;
-
-}
-
-.loginCard input:hover{
-
-    border-color:#16b4ff;
-
-}
-
-.loginCard input:focus{
-
-    outline:none;
-
-    border-color:#16b4ff;
-
-    box-shadow:0 0 22px rgba(22,180,255,.25);
-
-}
