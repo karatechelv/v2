@@ -1,352 +1,467 @@
 /******************************************************************************
- Project : Karatech ELV
- File    : Login.tsx
-******************************************************************************/
+ * Project     : Karatech ELV
+ * File        : Login.tsx
+ * Description : Login Page
+ ******************************************************************************/
 
 import "./Login.css";
 import { Link } from "react-router-dom";
 
 function Login() {
 
-  return (
+    return (
 
-    <div className="login">
+        <div className="login">
 
-      {/* ================= HEADER ================= */}
+            {/*==================================================================
+                                   HEADER
+            ==================================================================*/}
 
-      <header className="topbar">
+            <header className="topbar">
 
-        <div className="topbar__logo">
+                {/*==================== LOGO ====================*/}
 
-          <img
-            src="/v2/logo.png"
-            alt="Karatech ELV"
-          />
+                <div className="topbar__logo">
 
-          <div>
+                    <img
+                        src="/v2/logo.png"
+                        alt="Karatech ELV"
+                    />
 
-            <h1>
-              KARATECH <span>ELV</span>
-            </h1>
+                    <div>
 
-            <p>
-              ENGINEERING OPERATING SYSTEM
-            </p>
+                        <h1>
 
-          </div>
+                            KARATECH <span>ELV</span>
 
-        </div>
+                        </h1>
 
-        <div className="topbar__center">
+                        <p>
 
-          <div className="language">
+                            ENGINEERING OPERATING SYSTEM
 
-            <button>
-              FA
-            </button>
+                        </p>
 
-            <button className="active">
-              EN
-            </button>
+                    </div>
 
-          </div>
+                </div>
 
-          <div className="languageText">
+                {/*==================== LANGUAGE ====================*/}
 
-            <p>
-              Language
-            </p>
+                <div className="topbar__center">
 
-            <span>
-              زبان
-            </span>
+                    <div className="language">
 
-          </div>
+                        <button>
 
-        </div>
+                            FA
 
-        <nav className="topbar__menu">
+                        </button>
 
-          <a href="#">
+                        <button className="active">
 
-            <span>❔</span>
+                            EN
 
-            <div>
+                        </button>
 
-              <small>
-                راهنما
-              </small>
+                    </div>
 
-              <span>
-                Help
-              </span>
+                    <div className="languageText">
+
+                        <p>
+
+                            انتخاب زبان
+
+                        </p>
+
+                        <span>
+
+                            Language
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                {/*==================== MENU ====================*/}
+
+                <nav className="topbar__menu">
+
+                    <a href="#">
+
+                        <div>
+
+                            <small>
+
+                                راهنما
+
+                            </small>
+
+                            <span>
+
+                                Help
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <a href="#">
+
+                        <div>
+
+                            <small>
+
+                                ارتباط با ما
+
+                            </small>
+
+                            <span>
+
+                                Contact Us
+
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </nav>
+
+            </header>
+
+            {/*==================================================================
+                                   BODY
+            ==================================================================*/}
+
+            <div className="loginBody">
+
+                {/*==================== LEFT PANEL ====================*/}
+
+                <div className="leftPanel">
+
+                    <h2>
+
+                        سیستم مهندسی هوشمند
+
+                    </h2>
+
+                    <h3>
+
+                        برای ساخت تابلوهای برق صنعتی
+
+                    </h3>
+
+                    <div className="blueLine"></div>
+
+                    <p>
+
+                        Intelligent Engineering System
+
+                        <br />
+
+                        for Industrial Electrical Panels
+
+                    </p>
+
+                                 {/*==================== FEATURES ====================*/}
+
+                <div className="feature">
+
+                    <b>⚡</b>
+
+                    <div>
+
+                        <b>
+
+                            طراحی و مهندسی
+
+                        </b>
+
+                        <span>
+
+                            Design & Engineering
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div className="feature">
+
+                    <b>⚙</b>
+
+                    <div>
+
+                        <b>
+
+                            اتوماسیون و کنترل
+
+                        </b>
+
+                        <span>
+
+                            Automation & Control
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div className="feature">
+
+                    <b>🛡</b>
+
+                    <div>
+
+                        <b>
+
+                            سیستم های ELV
+
+                        </b>
+
+                        <span>
+
+                            ELV Systems
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div className="feature">
+
+                    <b>🏭</b>
+
+                    <div>
+
+                        <b>
+
+                            صنعت و زیرساخت
+
+                        </b>
+
+                        <span>
+
+                            Industry & Infrastructure
+
+                        </span>
+
+                    </div>
+
+                </div>
 
             </div>
 
-          </a>
+            {/*==================== LOGIN CARD ====================*/}
 
-          <a href="#">
+            <div className="loginCard">
 
-            <span>✉</span>
+                {/*==================== LOGO ====================*/}
 
-            <div>
+                <img
+                    className="cardLogo"
+                    src="/v2/logo.png"
+                    alt="Karatech ELV"
+                />
 
-              <small>
-                ارتباط با ما
-              </small>
+                {/*==================== TITLE ====================*/}
 
-              <span>
-                Contact Us
-              </span>
+                <h2>
+
+                    به KARATECH ELV خوش آمدید
+
+                </h2>
+
+                <p>
+
+                    Welcome to KARATECH ELV
+
+                </p>
+
+                {/*==================== USERNAME ====================*/}
+
+                <input
+                    type="text"
+                    placeholder="نام کاربری / Username"
+                />
+
+                {/*==================== PASSWORD ====================*/}
+
+                <div className="passwordBox">
+
+                                 {/*==================== PASSWORD ====================*/}
+
+                <div className="passwordBox">
+
+                    <input
+                        type="password"
+                        placeholder="رمز عبور / Password"
+                    />
+
+                    <span>
+
+                        👁
+
+                    </span>
+
+                </div>
+
+                {/*==================== REMEMBER ====================*/}
+
+                <div className="remember">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                        />
+
+                        <span>
+
+                            مرا به خاطر بسپار
+
+                        </span>
+
+                    </label>
+
+                    <a href="#">
+
+                        فراموشی رمز عبور؟
+
+                    </a>
+
+                </div>
+
+                {/*==================== SIGN IN ====================*/}
+
+                <button
+                    className="signin"
+                >
+
+                    <div>
+
+                        ورود
+
+                        <span>
+
+                            SIGN IN
+
+                        </span>
+
+                    </div>
+
+                    <strong>
+
+                        →
+
+                    </strong>
+
+                </button>
+
+                {/*==================== REGISTER ====================*/}
+
+                <div className="register">
+
+                    <p>
+
+                        حساب کاربری ندارید؟
+
+                    </p>
+
+                    <span>
+
+                        Don't have an account?
+
+                    </span>
+
+                    <Link
+                        to="/register"
+                    >
+
+                        ایجاد حساب کاربری
+
+                    </Link>
+
+                </div>
 
             </div>
 
-          </a>
+            {/*==================== RIGHT PANEL ====================*/}
 
-        </nav>
+            <div className="rightPanel">
 
-      </header>
+                         {/*==================== RIGHT PANEL ====================*/}
 
-      {/* ================= BODY ================= */}
+            <div className="rightPanel">
 
-      <div className="loginBody">
+                {/*==================== FACTORY IMAGE ====================*/}
 
-        {/* ================= LEFT ================= */}
-
-        <div className="leftPanel">
-
-          <h2>
-
-            سیستم مهندسی هوشمند
-
-            <br />
-
-            برای ساخت تابلوهای برق صنعتی
-
-          </h2>
-
-          <h3>
-
-            Intelligent Engineering System
-
-            <br />
-
-            for Industrial Electrical Panels
-
-          </h3>
-
-          <div className="blueLine"></div>
-
-          <div className="feature">
-
-            <b>⚡</b>
-
-            <div>
-
-              <b>طراحی و مهندسی</b>
-
-              <span>Design & Engineering</span>
+                <img
+                    src="/v2/panel-room.jpg"
+                    alt="Panel Factory"
+                />
 
             </div>
 
-          </div>
+        </div>
 
-          <div className="feature">
+        {/*==================================================================
+                                FOOTER
+        ==================================================================*/}
 
-            <b>⚙</b>
+        <footer>
+
+            {/*==================== COPYRIGHT ====================*/}
 
             <div>
 
-              <b>اتوماسیون و کنترل</b>
-
-              <span>Automation & Control</span>
+                © 2026 KARATECH ELV
 
             </div>
 
-          </div>
-
-          <div className="feature">
-
-            <b>🛡</b>
+            {/*==================== DESCRIPTION ====================*/}
 
             <div>
 
-              <b>سیستم های ELV</b>
-
-              <span>ELV Systems</span>
+                Electrical • Automation • ELV • Industrial
 
             </div>
 
-          </div>
-
-          <div className="feature">
-
-            <b>🏭</b>
+            {/*==================== DEVELOPER ====================*/}
 
             <div>
 
-              <b>صنعت و زیرساخت</b>
+                Designed & Developed by
 
-              <span>Industry & Infrastructure</span>
+                <br />
+
+                <strong>
+
+                    Mohsen Keramati Layegh
+
+                </strong>
 
             </div>
 
-          </div>
-
-        </div>
-
-                {/* ================= CENTER ================= */}
-
-         <div className="loginCard">
-
-          <img
-            className="cardLogo"
-            src="/v2/logo.png"
-            alt="Karatech ELV"
-          />
-
-          <h2>
-            به KARATECH ELV خوش آمدید
-          </h2>
-
-          <p>
-            Welcome to KARATECH ELV
-          </p>
-
-          <input
-            type="text"
-            placeholder="نام کاربری / Username"
-          />
-
-          <div className="passwordBox">
-
-            <input
-              type="password"
-              placeholder="رمز عبور / Password"
-            />
-
-            <span>👁</span>
-
-          </div>
-
-          <div className="remember">
-
-            <label>
-
-              <input type="checkbox"/>
-
-              <span>
-                مرا به خاطر بسپار
-              </span>
-
-            </label>
-
-            <a href="#">
-              فراموشی رمز عبور؟
-            </a>
-
-          </div>
-
-          <button className="signin">
+            {/*==================== VERSION ====================*/}
 
             <div>
 
-              ورود
-
-              <span>
-                SIGN IN
-              </span>
+                v2.1.0
 
             </div>
 
-            <strong>
-              →
-            </strong>
-
-          </button>
-
-          <div className="register">
-
-            <p>
-              حساب کاربری ندارید؟
-            </p>
-
-            <span>
-              Don't have an account?
-            </span>
-
-            <Link to="/register">
-
-              ایجاد حساب کاربری
-
-            </Link>
-
-          </div>
-
-        </div>
-       
-        {/* ================= RIGHT ================= */}
-
-        <div className="rightPanel">
-
-          <img
-            src="/v2/panel-room.jpg"
-            alt="Panel Factory"
-          />
-
-        </div>
-
-      </div>
-
-      {/* ================= FOOTER ================= */}
-
-      <footer>
-
-        <div>
-
-          © 2026 KARATECH ELV. All rights reserved.
-
-        </div>
-
-        <div>
-
-          Electrical&nbsp;&nbsp;•&nbsp;&nbsp;Automation&nbsp;&nbsp;•&nbsp;&nbsp;ELV&nbsp;&nbsp;•&nbsp;&nbsp;Industrial
-
-        </div>
-
-        <div
-          style={{
-            textAlign: "right",
-            lineHeight: "20px"
-          }}
-        >
-
-          طراحی و توسعه توسط محسن کرامتی لایق
-
-          <br />
-
-          Designed &amp; Developed by Mohsen Keramati Layegh
-
-        </div>
-
-        <div
-          style={{
-            padding: "8px 18px",
-            borderRadius: "18px",
-            background: "#111c2a",
-            border: "1px solid rgba(255,255,255,.08)"
-          }}
-        >
-
-          v2.1.0
-
-        </div>
-
-      </footer>
+        </footer>
 
     </div>
 
-  );
+);
 
 }
 
