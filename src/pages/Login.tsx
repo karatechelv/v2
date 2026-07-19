@@ -466,3 +466,141 @@ function Login() {
 }
 
 export default Login;
+
+                /******************************************************************************
+LOGIN PREMIUM FINAL
+******************************************************************************/
+
+/*==================== LOGIN CARD ====================*/
+
+.loginCard{
+
+    position:relative;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        rgba(8,14,25,.95),
+        rgba(5,10,18,.97)
+    );
+
+    backdrop-filter:blur(22px);
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+}
+
+.loginCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(0,170,255,.12),
+
+    transparent 70%);
+
+    top:-260px;
+
+    right:-220px;
+
+    pointer-events:none;
+
+}
+
+.loginCard>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*==================== TITLE ====================*/
+
+.loginCard h2{
+
+    font-size:31px;
+
+    font-weight:700;
+
+    margin-top:12px;
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+}
+
+.loginCard p{
+
+    text-align:center;
+
+    color:#8ea8c2;
+
+    margin-bottom:35px;
+
+    line-height:28px;
+
+}
+
+/*==================== INPUT ====================*/
+
+.loginCard input{
+
+    width:100%;
+
+    height:58px;
+
+    padding:0 20px;
+
+    margin-bottom:18px;
+
+    background:#08131f;
+
+    border:1px solid #24415f;
+
+    border-radius:15px;
+
+    color:#fff;
+
+    font-size:15px;
+
+}
+
+.loginCard input:hover{
+
+    border-color:#16b4ff;
+
+}
+
+.loginCard input:focus{
+
+    outline:none;
+
+    border-color:#16b4ff;
+
+    box-shadow:0 0 22px rgba(22,180,255,.25);
+
+}
