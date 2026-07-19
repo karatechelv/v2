@@ -206,11 +206,17 @@ display:block;
 
 .loginBody{
 
-flex:1;
+    flex:1;
 
-display:grid;
+    display:grid;
 
-grid-template-columns:360px 560px 1fr;
+    grid-template-columns:360px 560px 1fr;
+
+    width:100%;
+
+    min-height:0;
+
+    overflow:hidden;
 
 }
 /*==================== LEFT PANEL ====================*/
@@ -380,21 +386,25 @@ z-index:0;
 
 }
 
-.loginCard>*{
+.loginCard{
 
-position:relative;
+    width:100%;
 
-z-index:1;
+    height:100%;
 
-}
+    display:flex;
 
-.cardLogo{
+    flex-direction:column;
 
-width:155px;
+    justify-content:center;
 
-margin-bottom:18px;
+    padding:55px;
 
-filter:drop-shadow(0 0 22px rgba(0,180,255,.35));
+    background:rgba(8,14,25,.93);
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+    border-right:1px solid rgba(255,255,255,.08);
 
 }
 
@@ -599,18 +609,17 @@ color:#ffffff;
 
 /*==================== RIGHT PANEL ====================*/
 
-.rightPanel{
+.rightPanel img{
 
-display:flex;
+    width:100%;
 
-justify-content:center;
+    height:100%;
 
-align-items:center;
+    object-fit:cover;
 
-overflow:hidden;
+    object-position:center;
 
-position:relative;
-
+}
 background:
 radial-gradient(circle at center,#081625,#05080f);
 
