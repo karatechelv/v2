@@ -1,7 +1,8 @@
+import React from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
-function Login() {
+const Login: React.FC = () => {
   return (
     <div className="login">
       {/* ================= HEADER ================= */}
@@ -110,6 +111,6 @@ function Login() {
       </footer>
     </div>
   );
-}
+};
 
 export default Login;
